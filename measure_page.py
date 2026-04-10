@@ -24,7 +24,7 @@ def measure_page_metrics(url):
     try:
         driver.get(url)
         # Wait for page to load
-        time.sleep(15)
+        time.sleep(5)
         print(f"Visited: {url}")
     finally:
         driver.quit()

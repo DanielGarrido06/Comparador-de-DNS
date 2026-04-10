@@ -1,0 +1,35 @@
+DNS used: 1.1.1.1
+
+
+Loaded Webpage: https://www.globo.com
+Total requests: 541
+Unique URLs: 420
+Total bytes downloaded: 14538.65 KB
+DNS used: 1.1.1.1
+
+
+Loaded Webpage: https://old.reddit.com
+Total requests: 108
+Unique URLs: 75
+Total bytes downloaded: 7349.36 KB
+DNS used: 1.1.1.1
+
+
+Loaded Webpage: https://www.forbes.com
+Total requests: 685
+Unique URLs: 565
+Total bytes downloaded: 18222.70 KB
+DNS used: 1.1.1.1
+
+
+Loaded Webpage: https://www.netflix.com
+Total requests: 161
+Unique URLs: 106
+Total bytes downloaded: 10163.86 KB
+DNS used: 1.1.1.1
+
+
+Loaded Webpage: https://washingtonpost.com
+Total requests: 1066
+Unique URLs: 935
+Total bytes downloaded: 30762.90 KB

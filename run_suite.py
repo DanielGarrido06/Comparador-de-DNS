@@ -1,6 +1,5 @@
 import subprocess
 import time
-import os
 import dns_utils
 
 # CONFIGURABLE PATHS
@@ -14,21 +13,18 @@ DNS_LIST = ["1.1.1.1", "192.168.0.69"]
 
 
 def run_suite(dns_addr, pages):
-    # Start mitmdump
-    mitm = subprocess.Popen(["mitmdump", "-w", MITM_FLOWS])
-    time.sleep(15)  # Give mitmdump time to start
     for url in pages:
+        # Start mitmdump
+        mitm = subprocess.Popen(["mitmdump", "-w", MITM_FLOWS])
+        time.sleep(2)  # Give mitmdump time to start
         print(f"Testing: {url}")
         subprocess.run(["python", MEASURE_SCRIPT, "--url", url.strip()])
-        time.sleep(15)
-    mitm.terminate()
-    mitm.wait()
-    time.sleep(1)
-    # Analyze flows
-    print(f"Results for DNS {dns_addr}:")
-    subprocess.run(["python", MITM_ANALYZER])
-    # Save results
-    os.rename(MITM_FLOWS, f"flows_{dns_addr.replace('.', '_')}.dump")
+        mitm.terminate()
+        mitm.wait()
+        time.sleep(1)
+        # Analyze flows
+        print(f"Results for DNS {dns_addr} at URL {url}:")
+        subprocess.run(["python", MITM_ANALYZER, "--dns", dns_addr, "--url", url.strip()])
 
 if __name__ == "__main__":
     dns_utils.exit_if_not_admin()

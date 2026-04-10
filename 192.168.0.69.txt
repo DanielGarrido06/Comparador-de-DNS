@@ -1,0 +1,35 @@
+DNS used: 192.168.0.69
+
+
+Loaded Webpage: https://www.globo.com
+Total requests: 188
+Unique URLs: 124
+Total bytes downloaded: 11368.91 KB
+DNS used: 192.168.0.69
+
+
+Loaded Webpage: https://old.reddit.com
+Total requests: 108
+Unique URLs: 75
+Total bytes downloaded: 7349.14 KB
+DNS used: 192.168.0.69
+
+
+Loaded Webpage: https://www.forbes.com
+Total requests: 179
+Unique URLs: 110
+Total bytes downloaded: 14959.34 KB
+DNS used: 192.168.0.69
+
+
+Loaded Webpage: https://www.netflix.com
+Total requests: 119
+Unique URLs: 76
+Total bytes downloaded: 11530.44 KB
+DNS used: 192.168.0.69
+
+
+Loaded Webpage: https://washingtonpost.com
+Total requests: 158
+Unique URLs: 120
+Total bytes downloaded: 9135.30 KB

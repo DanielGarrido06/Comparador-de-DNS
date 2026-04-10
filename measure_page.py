@@ -1,39 +1,31 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-import time
+from selenium.webdriver.common.proxy import Proxy, ProxyType
 import argparse
+import time
 
 def measure_page_metrics(url):
     options = Options()
-    options.headless = True  # Run in headless mode
+    options.add_argument('--width=1920')
+    options.add_argument('--height=1080')
+    # Disable all cache for fair comparison
+    options.set_preference("browser.cache.disk.enable", False)
+    options.set_preference("browser.cache.memory.enable", False)
+    options.set_preference("browser.cache.offline.enable", False)
+    options.set_preference("network.http.use-cache", False)
+
+    # Set up mitmproxy as a proxy (assumes mitmproxy is running on localhost:8080)
+    proxy = Proxy()
+    proxy.proxy_type = ProxyType.MANUAL
+    proxy.http_proxy = "localhost:8080"
+    proxy.ssl_proxy = "localhost:8080"
+    options.proxy = proxy
     driver = webdriver.Firefox(options=options)
     try:
-        start = time.time()
         driver.get(url)
         # Wait for page to load
-        time.sleep(2)
-        # Use browser performance API to get metrics
-        perf_entries = driver.execute_script("return window.performance.getEntries();")
-        nav = driver.execute_script("return window.performance.timing;")
-        # Calculate load time
-        load_time = nav['loadEventEnd'] - nav['navigationStart']
-        # Number of requests
-        num_requests = len(perf_entries)
-        # Total data downloaded (sum of transferSize if available, else 0)
-        total_bytes = 0
-        for entry in perf_entries:
-            if 'transferSize' in entry and entry['transferSize']:
-                total_bytes += entry['transferSize']
-        print(f"Page: {url}")
-        print(f"Load time: {load_time/1000:.2f} seconds")
-        print(f"Number of requests: {num_requests}")
-        print(f"Total data downloaded: {total_bytes/1024:.2f} KB")
-        return {
-            'url': url,
-            'load_time_ms': load_time,
-            'num_requests': num_requests,
-            'total_bytes': total_bytes
-        }
+        time.sleep(15)
+        print(f"Visited: {url}")
     finally:
         driver.quit()
 

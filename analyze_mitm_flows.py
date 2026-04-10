@@ -1,7 +1,7 @@
 from mitmproxy.io import FlowReader
 
 # Path to the mitmproxy dump file (e.g., 'flows_file')
-flows_path = "flows_file"
+flows_path = "flows_192_168_0_69.dump"
 
 total_bytes = 0
 num_requests = 0

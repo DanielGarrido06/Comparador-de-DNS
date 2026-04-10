@@ -10,19 +10,20 @@ MITM_ANALYZER = "analyze_mitm_flows.py"
 MEASURE_SCRIPT = "measure_page.py"
 
 # DNS addresses to test
-DNS_LIST = ["192.168.0.69", "1.1.1.1"]
+DNS_LIST = ["1.1.1.1", "192.168.0.69"]
 
 
 def run_suite(dns_addr, pages):
     # Start mitmdump
     mitm = subprocess.Popen(["mitmdump", "-w", MITM_FLOWS])
-    time.sleep(2)  # Give mitmdump time to start
+    time.sleep(15)  # Give mitmdump time to start
     for url in pages:
         print(f"Testing: {url}")
         subprocess.run(["python", MEASURE_SCRIPT, "--url", url.strip()])
-        time.sleep(2)
+        time.sleep(15)
     mitm.terminate()
     mitm.wait()
+    time.sleep(1)
     # Analyze flows
     print(f"Results for DNS {dns_addr}:")
     subprocess.run(["python", MITM_ANALYZER])

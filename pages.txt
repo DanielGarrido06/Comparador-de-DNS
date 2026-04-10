@@ -1,2 +1,2 @@
-globo.com
-old.reddit.com
+https://www.globo.com
+https://old.reddit.com

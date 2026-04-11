@@ -6,6 +6,8 @@ import time
 
 def measure_page_metrics(url):
     options = Options()
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
     options.add_argument('--width=1920')
     options.add_argument('--height=1080')
     # Disable all cache for fair comparison

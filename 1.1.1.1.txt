@@ -1,35 +1,35 @@
 DNS used: 1.1.1.1
 
 
-Loaded Webpage: https://www.globo.com
-Total requests: 541
-Unique URLs: 420
-Total bytes downloaded: 14538.65 KB
+Loaded Webpage: www.globo.com
+Total requests: 518
+Unique URLs: 403
+Total Kylobytes downloaded: 20959.70
 DNS used: 1.1.1.1
 
 
-Loaded Webpage: https://old.reddit.com
-Total requests: 108
-Unique URLs: 75
-Total bytes downloaded: 7349.36 KB
+Loaded Webpage: www.reddit.com
+Total requests: 180
+Unique URLs: 131
+Total Kylobytes downloaded: 10010.75
 DNS used: 1.1.1.1
 
 
-Loaded Webpage: https://www.forbes.com
-Total requests: 685
-Unique URLs: 565
-Total bytes downloaded: 18222.70 KB
+Loaded Webpage: www.youtube.com
+Total requests: 231
+Unique URLs: 177
+Total Kylobytes downloaded: 12304.43
 DNS used: 1.1.1.1
 
 
-Loaded Webpage: https://www.netflix.com
-Total requests: 161
-Unique URLs: 106
-Total bytes downloaded: 10163.86 KB
+Loaded Webpage: www.netflix.com
+Total requests: 147
+Unique URLs: 109
+Total Kylobytes downloaded: 9740.98
 DNS used: 1.1.1.1
 
 
-Loaded Webpage: https://washingtonpost.com
-Total requests: 1066
-Unique URLs: 935
-Total bytes downloaded: 30762.90 KB
+Loaded Webpage: washingtonpost.com
+Total requests: 945
+Unique URLs: 775
+Total Kylobytes downloaded: 9833.98

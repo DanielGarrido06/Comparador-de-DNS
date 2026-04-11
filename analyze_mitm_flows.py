@@ -23,10 +23,10 @@ with open(flows_path, "rb") as logfile:
 output_lines = []
 
 output_lines.append(f"DNS used: {args.dns}\n\n")
-output_lines.append(f"Loaded Webpage: {args.url}")
+output_lines.append(f"Loaded Webpage: {args.url.replace('https://', '')}")
 output_lines.append(f"Total requests: {num_requests}")
 output_lines.append(f"Unique URLs: {len(urls)}")
-output_lines.append(f"Total bytes downloaded: {total_bytes/1024:.2f} KB")
+output_lines.append(f"Total Kylobytes downloaded: {total_bytes/1024:.2f}")
 
 output_text = "\n".join(output_lines)
 print(output_text)

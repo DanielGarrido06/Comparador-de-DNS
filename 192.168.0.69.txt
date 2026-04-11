@@ -1,35 +1,35 @@
 DNS used: 192.168.0.69
 
 
-Loaded Webpage: https://www.globo.com
-Total requests: 188
+Loaded Webpage: www.globo.com
+Total requests: 182
+Unique URLs: 132
+Total Kylobytes downloaded: 13137.71
+DNS used: 192.168.0.69
+
+
+Loaded Webpage: www.reddit.com
+Total requests: 174
 Unique URLs: 124
-Total bytes downloaded: 11368.91 KB
+Total Kylobytes downloaded: 10131.13
 DNS used: 192.168.0.69
 
 
-Loaded Webpage: https://old.reddit.com
+Loaded Webpage: www.youtube.com
+Total requests: 227
+Unique URLs: 173
+Total Kylobytes downloaded: 12308.95
+DNS used: 192.168.0.69
+
+
+Loaded Webpage: www.netflix.com
 Total requests: 108
-Unique URLs: 75
-Total bytes downloaded: 7349.14 KB
+Unique URLs: 79
+Total Kylobytes downloaded: 9451.81
 DNS used: 192.168.0.69
 
 
-Loaded Webpage: https://www.forbes.com
-Total requests: 179
-Unique URLs: 110
-Total bytes downloaded: 14959.34 KB
-DNS used: 192.168.0.69
-
-
-Loaded Webpage: https://www.netflix.com
-Total requests: 119
-Unique URLs: 76
-Total bytes downloaded: 11530.44 KB
-DNS used: 192.168.0.69
-
-
-Loaded Webpage: https://washingtonpost.com
-Total requests: 158
-Unique URLs: 120
-Total bytes downloaded: 9135.30 KB
+Loaded Webpage: washingtonpost.com
+Total requests: 143
+Unique URLs: 122
+Total Kylobytes downloaded: 7417.64

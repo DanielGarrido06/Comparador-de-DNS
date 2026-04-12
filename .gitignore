@@ -4,7 +4,7 @@ __pycache__/
 
 
 # Output result files
-!pages.txt
+!input.txt
 *.txt
 
 # mitmdump output

@@ -2,14 +2,12 @@ import subprocess
 import time
 import dns_utils
 
+
 # CONFIGURABLE PATHS
-PAGES_FILE = "pages.txt"  # List of URLs, one per line
+INPUT_FILE = "input.txt"  # Formato: primeira linha DNS, demais URLs
 MITM_FLOWS = "flows_file"
 MITM_ANALYZER = "analyze_mitm_flows.py"
 MEASURE_SCRIPT = "measure_page.py"
-
-# DNS addresses to test
-DNS_LIST = ["1.1.1.1", "192.168.0.69"]
 
 
 def run_suite(dns_addr, pages):
@@ -26,11 +24,24 @@ def run_suite(dns_addr, pages):
         print(f"Results for DNS {dns_addr} at URL {url}:")
         subprocess.run(["python", MITM_ANALYZER, "--dns", dns_addr, "--url", url.strip()])
 
+def parse_input_file(input_path):
+    dns_list = []
+    pages = []
+    with open(input_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            if line.lower().startswith("dns:"):
+                dns_list = [x.strip() for x in line[4:].split(",") if x.strip()]
+            else:
+                pages.append(line)
+    return dns_list, pages
+
 if __name__ == "__main__":
     dns_utils.exit_if_not_admin()
     network_interface = dns_utils.get_active_interface()
-    with open(PAGES_FILE) as f:
-        pages = [line.strip() for line in f if line.strip()]
+    DNS_LIST, pages = parse_input_file(INPUT_FILE)
     for dns in DNS_LIST:
         dns_utils.flush_dns_cache()
         dns_utils.set_dns(network_interface, dns)

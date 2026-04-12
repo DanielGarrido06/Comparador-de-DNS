@@ -4,8 +4,8 @@ __pycache__/
 
 
 # Output result files
-!input.txt
 *.txt
+!input.txt
 
 # mitmdump output
 flows_file

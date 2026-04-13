@@ -28,16 +28,24 @@ def classify_content_type(ctype):
 ip_file_pattern = re.compile(r'^(\d{1,3}\.){3}\d{1,3}\.txt$')
 files = [f for f in os.listdir('.') if ip_file_pattern.match(f)]
 
-site_data = defaultdict(lambda: defaultdict(float))
+# site_data[site][dns][group] -> KB
+site_data = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
 
 for fname in files:
     with open(fname, encoding='utf-8') as f:
         lines = f.readlines()
-    site = None
+
+    current_dns = None
+    current_site = None
+
     for i, line in enumerate(lines):
+        if line.startswith('DNS used:'):
+            current_dns = line.split(':', 1)[1].strip()
+
         if line.startswith('Loaded Webpage:'):
-            site = line.split(':', 1)[1].strip()
-        if line.startswith('Breakdown by Content-Type:') and site:
+            current_site = line.split(':', 1)[1].strip()
+
+        if line.startswith('Breakdown by Content-Type:') and current_site and current_dns:
             j = i + 1
             while j < len(lines) and lines[j].strip():
                 parts = lines[j].strip().split(':')
@@ -45,17 +53,31 @@ for fname in files:
                     ctype = parts[0].strip()
                     kb = float(parts[1].replace('KB', '').strip())
                     group = classify_content_type(ctype)
-                    site_data[site][group] += kb
+                    site_data[current_site][current_dns][group] += kb
                 j += 1
 
-# Plot for each site
-for site, group_data in site_data.items():
+# Plot one graph per site, with grouped bars per DNS inside each content type
+for site, dns_data in site_data.items():
     labels = ['Media', 'Application', 'Text', 'Others']
-    values = [group_data.get(label, 0) for label in labels]
-    plt.figure(figsize=(6,4))
-    plt.bar(labels, values, color=['#4e79a7', '#f28e2b', '#59a14f', '#e15759'])
+    dns_servers = sorted(dns_data.keys())
+    x_positions = list(range(len(labels)))
+
+    num_dns = len(dns_servers)
+    group_width = 0.8
+    bar_width = group_width / num_dns if num_dns else group_width
+
+    plt.figure(figsize=(9, 5))
+
+    for idx, dns_server in enumerate(dns_servers):
+        offset = (idx - (num_dns - 1) / 2) * bar_width
+        dns_values = [dns_data[dns_server].get(label, 0) for label in labels]
+        bar_positions = [x + offset for x in x_positions]
+        plt.bar(bar_positions, dns_values, width=bar_width, label=dns_server)
+
+    plt.xticks(x_positions, labels)
     plt.title(f'Data Breakdown by Content Type\n{site}')
     plt.ylabel('Kilobytes (KB)')
     plt.xlabel('Content Type Group')
+    plt.legend(title='DNS Server')
     plt.tight_layout()
     plt.show()

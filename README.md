@@ -9,7 +9,7 @@ Atualmente, esse projeto *não restaura as configurações de DNS às originais 
 ## Funcionalidades
 - Troca automática do servidor DNS da interface de rede ativa.
 - Limpa o cache de DNS do sistema entre medições
-- Execução de medições de carregamento de páginas web em modo headless com Selenium e Firefox, sempre em 1920x1080, para que as medições sejam comparáveis em sites com conteúdo dinâmico baseado em resolução.
+- Execução de medições de carregamento de páginas web com Selenium e Firefox, sempre em 1920x1080, para que as medições sejam comparáveis em sites com conteúdo dinâmico baseado em resolução.
 - Interceptação e gravação do tráfego HTTP/HTTPS usando mitmproxy.
 - Análise dos fluxos capturados para extrair métricas como número de requisições, URLs únicas e volume de dados transferidos.
 - Geração de relatórios automáticos em arquivos `.txt` para cada DNS testado.

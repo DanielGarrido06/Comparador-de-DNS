@@ -6,10 +6,7 @@ import time
 
 def measure_page_metrics(url):
     options = Options()
-    options.add_argument('--headless')
     options.add_argument('--disable-gpu')
-    options.add_argument('--width=1920')
-    options.add_argument('--height=1080')
     # Disable all cache for fair comparison
     options.set_preference("browser.cache.disk.enable", False)
     options.set_preference("browser.cache.memory.enable", False)
@@ -23,6 +20,7 @@ def measure_page_metrics(url):
     proxy.ssl_proxy = "localhost:8080"
     options.proxy = proxy
     driver = webdriver.Firefox(options=options)
+    driver.set_window_size(1920, 1080)
     try:
         driver.get(url)
         # Wait for page to load

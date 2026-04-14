@@ -47,3 +47,84 @@ Atualmente, esse projeto *não restaura as configurações de DNS às originais 
 ## Observações
 - O script deve ser executado como administrador para conseguir alterar o DNS da interface de rede.
 - O mitmproxy precisa estar instalado e acessível no PATH.
+
+# Exemplo de resultado
+Análise do site https://www.globo.com :
+
+<img width="1350" height="750" alt="image" src="https://github.com/user-attachments/assets/9d66f248-0fae-4e62-896d-9ca85bb71665" />
+
+
+<table>
+  <tr>
+    <th>DNS: 1.1.1.1</th>
+    <th>DNS: 192.168.0.69</th>
+  </tr>
+  <tr>
+    <td valign="top">
+
+<strong>Loaded Webpage:</strong> www.globo.com  
+<strong>Total requests:</strong> 470  
+<strong>Unique URLs:</strong> 342  
+<strong>Total KB downloaded:</strong> 17626.17  
+
+<hr>
+
+<strong>Breakdown by Content-Type:</strong>  
+- image/svg+xml: 4366.41 KB  
+- text/plain: 4351.05 KB  
+- application/javascript: 3354.92 KB  
+- application/x-xpinstall: 1725.03 KB  
+- text/javascript: 1091.26 KB  
+- application/octet-stream: 796.25 KB  
+- text/html: 398.04 KB  
+- application/x-binary: 392.69 KB  
+- image/avif: 224.61 KB  
+- javascript charset=utf-8: 216.92 KB  
+- application/x-javascript: 180.24 KB  
+- font/woff2: 141.56 KB  
+- image/webp: 125.91 KB  
+- application/json: 106.77 KB  
+- binary/octet-stream: 88.10 KB  
+- text/css: 22.95 KB  
+- font/woff: 22.59 KB  
+- image/jpeg: 14.53 KB  
+- image/png: 4.58 KB  
+- unknown: 0.90 KB  
+- image/gif: 0.84 KB  
+- application/octet-stream, text/plain: 0.04 KB  
+
+    </td>
+    <td valign="top">
+
+<strong>Loaded Webpage:</strong> www.globo.com  
+<strong>Total requests:</strong> 200  
+<strong>Unique URLs:</strong> 127  
+<strong>Total KB downloaded:</strong> 14281.80  
+
+<hr>
+
+<strong>Breakdown by Content-Type:</strong>  
+- image/svg+xml: 4366.41 KB  
+- text/plain: 4320.82 KB  
+- application/javascript: 1786.74 KB  
+- application/x-xpinstall: 1725.03 KB  
+- application/octet-stream: 796.25 KB  
+- text/html: 340.04 KB  
+- image/avif: 224.61 KB  
+- javascript charset=utf-8: 216.92 KB  
+- text/javascript: 177.47 KB  
+- image/webp: 125.91 KB  
+- binary/octet-stream: 88.10 KB  
+- application/json: 50.32 KB  
+- application/x-javascript: 42.25 KB  
+- text/css: 20.90 KB  
+- application/octet-stream, text/plain: 0.03 KB  
+
+    </td>
+  </tr>
+</table>
+
+
+
+
+  

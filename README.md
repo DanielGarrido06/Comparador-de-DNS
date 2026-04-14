@@ -51,8 +51,7 @@ Atualmente, esse projeto *não restaura as configurações de DNS às originais 
 # Exemplo de resultado
 Análise do site https://www.globo.com :
 
-<img width="1350" height="750" alt="image" src="https://github.com/user-attachments/assets/9d66f248-0fae-4e62-896d-9ca85bb71665" />
-
+<img width="1350" height="750" alt="image" src="https://github.com/user-attachments/assets/c761a448-b753-4f35-ad1f-13d5bdba89e1" />
 
 <table>
   <tr>

@@ -5,30 +5,33 @@ from collections import defaultdict
 
 # Define content type groups
 MEDIA_TYPES = [
-    'image/', 'audio/', 'video/', 'font/', 'application/x-xpinstall', 'application/x-binary', 'application/x-mpegurl', 'application/json+protobuf'
-]
+    'image/', 'audio/', 'video/', 'font/']
 APPLICATION_TYPES = [
-    'application/javascript', 'application/x-javascript', 'application/json', 'application/octet-stream', 'application/x-protobuf', 'binary/octet-stream']
+    'application/', 'javascript/', 'binary/']
 TEXT_TYPES = [
-    'text/', 'javascript charset=utf-8', 'text/vnd.reddit.partial+html']
+    'text/']
 
 # Helper to classify content type
 
 def classify_content_type(ctype):
     ctype = ctype.lower()
     if any(ctype.startswith(prefix) for prefix in MEDIA_TYPES):
-        return 'Media'
+        return 'Mídia'
     if any(ctype.startswith(prefix) or ctype == prefix for prefix in APPLICATION_TYPES):
-        return 'Application'
+        return 'Aplicação'
     if any(ctype.startswith(prefix) or ctype == prefix for prefix in TEXT_TYPES):
-        return 'Text'
-    return 'Others'
+        return 'Texto'
+    return 'Outros'
 
 # Find all files matching IP address pattern
 ip_file_pattern = re.compile(r'^(\d{1,3}\.){3}\d{1,3}\.txt$')
 files = [f for f in os.listdir('.') if ip_file_pattern.match(f)]
 graphics_dir = 'charts'
 os.makedirs(graphics_dir, exist_ok=True)
+
+DNS_DISPLAY_NAMES = {
+    '192.168.0.69': 'pihole',
+}
 
 # site_data[site][dns][group] -> KB
 site_data = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
@@ -60,7 +63,7 @@ for fname in files:
 
 # Plot one graph per site, with grouped bars per DNS inside each content type
 for site, dns_data in site_data.items():
-    labels = ['Media', 'Application', 'Text', 'Others']
+    labels = ['Mídia', 'Aplicação', 'Texto', 'Outros']
     dns_servers = sorted(dns_data.keys())
     x_positions = list(range(len(labels)))
 
@@ -74,16 +77,15 @@ for site, dns_data in site_data.items():
         offset = (idx - (num_dns - 1) / 2) * bar_width
         dns_values = [dns_data[dns_server].get(label, 0) for label in labels]
         bar_positions = [x + offset for x in x_positions]
-        plt.bar(bar_positions, dns_values, width=bar_width, label=dns_server)
+        legend_label = DNS_DISPLAY_NAMES.get(dns_server, dns_server)
+        plt.bar(bar_positions, dns_values, width=bar_width, label=legend_label)
 
     plt.xticks(x_positions, labels)
-    plt.title(f'Data Breakdown by Content Type\n{site}')
+    plt.title(f'Distribuição de Dados por Tipo de Conteudo\n{site}')
     plt.ylabel('Kilobytes (KB)')
-    plt.xlabel('Content Type Group')
-    plt.legend(title='DNS Server')
+    plt.xlabel('Tipo de Conteúdo')
+    plt.legend(title='Servidor DNS')
     plt.tight_layout()
 
     safe_site = re.sub(r'[^a-zA-Z0-9._-]+', '_', site)
     plt.savefig(os.path.join(graphics_dir, f'{safe_site}.png'), dpi=150)
-
-plt.show()

@@ -11,9 +11,11 @@ Atualmente, esse projeto *não restaura as configurações de DNS às originais 
 - Limpa o cache de DNS do sistema entre medições
 - Execução de medições de carregamento de páginas web com Selenium e Firefox, sempre em 1920x1080, para que as medições sejam comparáveis em sites com conteúdo dinâmico baseado em resolução.
 - Interceptação e gravação do tráfego HTTP/HTTPS usando mitmproxy.
-- Análise dos fluxos capturados para extrair métricas como número de requisições, URLs únicas e volume de dados transferidos.
+- Análise dos fluxos capturados para extrair métricas como número de requisições, URLs únicas, volume de dados transferidos e tempo de carregamento observado pela rede.
+- Categorização de dados transferidos por [tipos MIME](https://mimetype.io/all-types)
+- Estimativa do tempo de carregamento da página
 - Geração de relatórios automáticos em arquivos `.txt` para cada DNS testado.
-- Geração de gráficos comparatórios para cada página web visitada
+- Geração de gráficos comparatórios para cada página web visitada, incluindo tempo de carregamento observado por DNS
 
 ## Estrutura dos Arquivos
 - `run_suite.py`: Script principal que coordena a execução dos testes para cada DNS e página.
@@ -47,6 +49,7 @@ Atualmente, esse projeto *não restaura as configurações de DNS às originais 
 ## Observações
 - O script deve ser executado como administrador para conseguir alterar o DNS da interface de rede.
 - O mitmproxy precisa estar instalado e acessível no PATH.
+- O tempo de carregamento reportado é derivado dos timestamps dos fluxos capturados pelo mitmproxy, usando a janela entre a primeira requisição observada e a resposta final, além do tempo do documento principal em HTML, e não reflete diretamente o tempo real que o Navegador leva para renderizar a página.
 
 # Exemplo de resultado
 Análise do site https://www.globo.com :

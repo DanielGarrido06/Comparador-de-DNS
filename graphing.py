@@ -27,6 +27,8 @@ def classify_content_type(ctype):
 # Find all files matching IP address pattern
 ip_file_pattern = re.compile(r'^(\d{1,3}\.){3}\d{1,3}\.txt$')
 files = [f for f in os.listdir('.') if ip_file_pattern.match(f)]
+graphics_dir = 'charts'
+os.makedirs(graphics_dir, exist_ok=True)
 
 # site_data[site][dns][group] -> KB
 site_data = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
@@ -80,4 +82,8 @@ for site, dns_data in site_data.items():
     plt.xlabel('Content Type Group')
     plt.legend(title='DNS Server')
     plt.tight_layout()
-    plt.show()
+
+    safe_site = re.sub(r'[^a-zA-Z0-9._-]+', '_', site)
+    plt.savefig(os.path.join(graphics_dir, f'{safe_site}.png'), dpi=150)
+
+plt.show()

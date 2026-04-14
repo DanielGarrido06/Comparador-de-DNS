@@ -1,3 +1,6 @@
+#Output Graphics
+charts/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

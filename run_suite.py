@@ -8,6 +8,7 @@ INPUT_FILE = "input.txt"  # Formato: primeira linha DNS, demais URLs
 MITM_FLOWS = "flows_file"
 MITM_ANALYZER = "analyze_mitm_flows.py"
 MEASURE_SCRIPT = "measure_page.py"
+GRAPHIC_SCRIPT = "graphing.py"
 
 
 def run_suite(dns_addr, pages):
@@ -46,4 +47,5 @@ if __name__ == "__main__":
         dns_utils.flush_dns_cache()
         dns_utils.set_dns(network_interface, dns)
         run_suite(dns, pages)
+    subprocess.run(["python", GRAPHIC_SCRIPT])
     print("All tests complete.")

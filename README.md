@@ -57,7 +57,7 @@ Análise do site https://www.globo.com :
 <table>
   <tr>
     <th>DNS: 1.1.1.1</th>
-    <th>DNS: 192.168.0.69</th>
+    <th>DNS: pihole</th>
   </tr>
   <tr>
     <td valign="top">

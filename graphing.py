@@ -14,6 +14,7 @@ DNS_DISPLAY_NAMES = {
 }
 
 BASELINE_DNS = '8.8.8.8'
+SAFE_FILENAME_PATTERN = r'[^a-zA-Z0-9._-]+'
 
 
 # Define content type groups
@@ -145,21 +146,28 @@ for site in sites:
         plt.bar(bar_positions, dns_values, width=bar_width, label=legend_label)
 
     plt.xticks(x_positions, labels)
-    plt.title(f'Distribuição de Dados por Tipo de Conteudo\n{site}\nMedição em: {timestamp_label}')
+    plt.title(f'Distribuição de Dados por Tipo de Conteúdo\n{site}\nMedição em: {timestamp_label}')
     plt.ylabel('Kilobytes (KB)')
     plt.xlabel('Tipo de Conteúdo')
     plt.legend(title='Servidor DNS')
     plt.tight_layout()
 
-    safe_site = re.sub(r'[^a-zA-Z0-9._-]+', '_', site)
+    safe_site = re.sub(SAFE_FILENAME_PATTERN, '_', site)
     site_dir = os.path.join(graphics_dir, safe_site)
     os.makedirs(site_dir, exist_ok=True)
-    safe_timestamp = re.sub(r'[^a-zA-Z0-9._-]+', '_', timestamp_label)
+    safe_timestamp = re.sub(SAFE_FILENAME_PATTERN, '_', timestamp_label)
     plt.savefig(os.path.join(site_dir, f'{safe_timestamp}.png'), dpi=150)
 
-# Plot one summary chart with percentage change in total downloaded data per site and DNS.
+# Plot one summary chart with percentage change in total downloaded data using the latest entry for each site and DNS pair.
+comparativos_dir = os.path.join(graphics_dir, 'Comparativos')
+os.makedirs(comparativos_dir, exist_ok=True)
+
+latest_entries = []
+for site in sites:
+    latest_entries.extend(get_latest_site_entries(site))
+
 totals_by_site_dns = defaultdict(lambda: defaultdict(float))
-for entry in site_data:
+for entry in latest_entries:
     totals_by_site_dns[entry.site][entry.dns] += sum(entry.groups.values())
 
 comparison_sites = sorted(totals_by_site_dns.keys())
@@ -171,6 +179,7 @@ if comparison_sites and all_dns_servers:
     num_dns = len(all_dns_servers)
     group_width = 0.8
     bar_width = group_width / num_dns if num_dns else group_width
+    timestamp_label = latest_entries[0].timestamp[:-4] if latest_entries else 'N/A'
 
     plt.figure(figsize=(12, 6))
 
@@ -179,13 +188,8 @@ if comparison_sites and all_dns_servers:
         percent_values = []
 
         for site in comparison_sites:
-            site_entries = get_latest_site_entries(site)
-            site_totals = defaultdict(float)
-            for entry in site_entries:
-                site_totals[entry.dns] += sum(entry.groups.values())
-
-            baseline_total = site_totals.get(baseline_dns)
-            current_total = site_totals.get(dns_server)
+            baseline_total = totals_by_site_dns[site].get(baseline_dns)
+            current_total = totals_by_site_dns[site].get(dns_server)
 
             if baseline_total is None or baseline_total == 0 or current_total is None:
                 percent_change = float('nan')
@@ -203,9 +207,10 @@ if comparison_sites and all_dns_servers:
     plt.axhline(0, color='black', linewidth=1)
     plt.xticks(x_positions, comparison_sites, rotation=25, ha='right')
     baseline_label = DNS_DISPLAY_NAMES.get(baseline_dns, baseline_dns)
-    plt.title(f'Variação Percentual de Dados Baixados por Site\nComparado ao DNS: {baseline_label}')
+    plt.title(f'Variação Percentual de Dados Baixados por Site\nComparado ao DNS: {baseline_label}\nMedição em: {timestamp_label}')
     plt.ylabel('Variação Percentual (%)')
     plt.xlabel('Site')
     plt.legend(title='Servidor DNS')
     plt.tight_layout()
-    plt.savefig(os.path.join(graphics_dir, 'comparativo_percentual_dns.png'), dpi=150)
+    safe_timestamp = re.sub(SAFE_FILENAME_PATTERN, '_', timestamp_label)
+    plt.savefig(os.path.join(comparativos_dir, f'{safe_timestamp}.png'), dpi=150)

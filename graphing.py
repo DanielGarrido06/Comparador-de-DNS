@@ -1,11 +1,11 @@
 import os
 import re
-import matplotlib.pyplot as plt
 from collections import defaultdict
+
+import matplotlib.pyplot as plt
 
 
 LABELS = ['Mídia', 'Aplicação', 'Texto', 'Outros']
-
 
 DNS_DISPLAY_NAMES = {
     '192.168.0.69': 'pihole',
@@ -16,14 +16,16 @@ DNS_DISPLAY_NAMES = {
 BASELINE_DNS = '8.8.8.8'
 SAFE_FILENAME_PATTERN = r'[^a-zA-Z0-9._-]+'
 
+DNS_USED_PREFIX = 'DNS used:'
+LOADED_WEBPAGE_PREFIX = 'Loaded Webpage:'
+TIMESTAMP_PREFIX = 'Timestamp of first request:'
+BREAKDOWN_PREFIX = 'Breakdown by Content-Type:'
 
 # Define content type groups
-MEDIA_TYPES = [
-    'image/', 'audio/', 'video/', 'font/']
-APPLICATION_TYPES = [
-    'application/', 'javascript/', 'binary/']
-TEXT_TYPES = [
-    'text/']
+MEDIA_TYPES = ['image/', 'audio/', 'video/', 'font/']
+APPLICATION_TYPES = ['application/', 'javascript/', 'binary/']
+TEXT_TYPES = ['text/']
+
 
 class SiteData:
     def __init__(self, site, dns, timestamp):
@@ -36,9 +38,13 @@ class SiteData:
         self.groups[group] = self.groups.get(group, 0.0) + kb
 
 
+def sanitize_filename(value):
+    return re.sub(SAFE_FILENAME_PATTERN, '_', value)
 
 
-# Helper to classify content type
+def trim_timestamp(value):
+    return value[:-4]
+
 
 def classify_content_type(ctype):
     ctype = ctype.lower()
@@ -50,14 +56,14 @@ def classify_content_type(ctype):
         return 'Texto'
     return 'Outros'
 
-# Find all files matching IP address pattern
+
 ip_file_pattern = re.compile(r'^(\d{1,3}\.){3}\d{1,3}\.txt$')
 content_type_line_pattern = re.compile(r'^(.+?):\s*(\d+(?:\.\d+)?)\s*KB$')
 files = [f for f in os.listdir('.') if ip_file_pattern.match(f)]
+
 graphics_dir = 'charts'
 os.makedirs(graphics_dir, exist_ok=True)
 
-# List of Site_Data instances.
 site_data = []
 
 
@@ -69,48 +75,6 @@ def get_or_create_site_data(site, dns, timestamp):
     entry = SiteData(site, dns, timestamp)
     site_data.append(entry)
     return entry
-
-for fname in files:
-    with open(fname, encoding='utf-8') as f:
-        lines = f.readlines()
-
-    current_dns = None
-    current_site = None
-    current_timestamp = None
-
-    for i, line in enumerate(lines):
-        if line.startswith('DNS used:'):
-            current_dns = line.split(':', 1)[1].strip()
-
-        if line.startswith('Loaded Webpage:'):
-            current_site = line.split(':', 1)[1].strip()
-
-        if line.startswith('Timestamp of first request:'):
-            current_timestamp = line.split(':', 1)[1].strip()
-
-
-        if line.startswith('Breakdown by Content-Type:') and current_site and current_dns and current_timestamp:
-            j = i + 1
-            while j < len(lines):
-                stripped = lines[j].strip()
-                if not stripped:
-                    break
-                # Stop when a new report block begins.
-                if stripped.startswith('DNS used:') or stripped.startswith('Loaded Webpage:') or stripped.startswith('Breakdown by Content-Type:'):
-                    break
-
-                match = content_type_line_pattern.match(stripped)
-                if match:
-                    ctype = match.group(1).strip()
-                    kb = float(match.group(2))
-                    group = classify_content_type(ctype)
-                    entry = get_or_create_site_data(current_site, current_dns, current_timestamp)
-                    entry.add_kb(group, kb)
-                j += 1
-
-# Plot one graph per site, with grouped bars per DNS inside each content type
-labels = LABELS
-sites = sorted({entry.site for entry in site_data})
 
 
 def get_latest_site_entries(site):
@@ -125,11 +89,58 @@ def get_latest_site_entries(site):
 
     return list(latest_entries.values())
 
+
+for fname in files:
+    with open(fname, encoding='utf-8') as f:
+        lines = f.readlines()
+
+    current_dns = None
+    current_site = None
+    current_timestamp = None
+
+    for i, line in enumerate(lines):
+        if line.startswith(DNS_USED_PREFIX):
+            current_dns = line.split(':', 1)[1].strip()
+
+        if line.startswith(LOADED_WEBPAGE_PREFIX):
+            current_site = line.split(':', 1)[1].strip()
+
+        if line.startswith(TIMESTAMP_PREFIX):
+            current_timestamp = line.split(':', 1)[1].strip()
+
+        if line.startswith(BREAKDOWN_PREFIX) and current_site and current_dns and current_timestamp:
+            j = i + 1
+            while j < len(lines):
+                stripped = lines[j].strip()
+                if not stripped:
+                    break
+
+                # Stop when a new report block begins.
+                if (
+                    stripped.startswith(DNS_USED_PREFIX)
+                    or stripped.startswith(LOADED_WEBPAGE_PREFIX)
+                    or stripped.startswith(BREAKDOWN_PREFIX)
+                ):
+                    break
+
+                match = content_type_line_pattern.match(stripped)
+                if match:
+                    ctype = match.group(1).strip()
+                    kb = float(match.group(2))
+                    group = classify_content_type(ctype)
+                    entry = get_or_create_site_data(current_site, current_dns, current_timestamp)
+                    entry.add_kb(group, kb)
+                j += 1
+
+
+labels = LABELS
+sites = sorted({entry.site for entry in site_data})
+
 for site in sites:
     site_entries = get_latest_site_entries(site)
     dns_servers = sorted(entry.dns for entry in site_entries)
     x_positions = list(range(len(labels)))
-    timestamp_label = site_entries[0].timestamp[:-4] if site_entries else 'N/A'
+    timestamp_label = trim_timestamp(site_entries[0].timestamp) if site_entries else 'N/A'
 
     num_dns = len(dns_servers)
     group_width = 0.8
@@ -152,13 +163,15 @@ for site in sites:
     plt.legend(title='Servidor DNS')
     plt.tight_layout()
 
-    safe_site = re.sub(SAFE_FILENAME_PATTERN, '_', site)
+    safe_site = sanitize_filename(site)
     site_dir = os.path.join(graphics_dir, safe_site)
     os.makedirs(site_dir, exist_ok=True)
-    safe_timestamp = re.sub(SAFE_FILENAME_PATTERN, '_', timestamp_label)
+    safe_timestamp = sanitize_filename(timestamp_label)
     plt.savefig(os.path.join(site_dir, f'{safe_timestamp}.png'), dpi=150)
 
-# Plot one summary chart with percentage change in total downloaded data using the latest entry for each site and DNS pair.
+
+# Plot one summary chart with percentage change in total downloaded data using
+# the latest entry for each site and DNS pair.
 comparativos_dir = os.path.join(graphics_dir, 'Comparativos')
 os.makedirs(comparativos_dir, exist_ok=True)
 
@@ -179,7 +192,7 @@ if comparison_sites and all_dns_servers:
     num_dns = len(all_dns_servers)
     group_width = 0.8
     bar_width = group_width / num_dns if num_dns else group_width
-    timestamp_label = latest_entries[0].timestamp[:-4] if latest_entries else 'N/A'
+    timestamp_label = trim_timestamp(latest_entries[0].timestamp) if latest_entries else 'N/A'
 
     plt.figure(figsize=(12, 6))
 
@@ -212,5 +225,6 @@ if comparison_sites and all_dns_servers:
     plt.xlabel('Site')
     plt.legend(title='Servidor DNS')
     plt.tight_layout()
-    safe_timestamp = re.sub(SAFE_FILENAME_PATTERN, '_', timestamp_label)
+
+    safe_timestamp = sanitize_filename(timestamp_label)
     plt.savefig(os.path.join(comparativos_dir, f'{safe_timestamp}.png'), dpi=150)

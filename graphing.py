@@ -89,7 +89,7 @@ def get_latest_site_entries(site):
 
     return list(latest_entries.values())
 
-
+# Process each file and extract data
 for fname in files:
     with open(fname, encoding='utf-8') as f:
         lines = f.readlines()
@@ -136,6 +136,7 @@ for fname in files:
 labels = LABELS
 sites = sorted({entry.site for entry in site_data})
 
+# Plot individual charts for each site showing distribution of content types by DNS server.
 for site in sites:
     site_entries = get_latest_site_entries(site)
     dns_servers = sorted(entry.dns for entry in site_entries)
@@ -188,15 +189,20 @@ all_dns_servers = sorted({dns for dns_totals in totals_by_site_dns.values() for 
 
 if comparison_sites and all_dns_servers:
     baseline_dns = BASELINE_DNS if BASELINE_DNS in all_dns_servers else all_dns_servers[0]
+    plot_dns_servers = [dns for dns in all_dns_servers if dns != baseline_dns]
+
+    if not plot_dns_servers:
+        plot_dns_servers = all_dns_servers
+
     x_positions = list(range(len(comparison_sites)))
-    num_dns = len(all_dns_servers)
+    num_dns = len(plot_dns_servers)
     group_width = 0.8
     bar_width = group_width / num_dns if num_dns else group_width
     timestamp_label = trim_timestamp(latest_entries[0].timestamp) if latest_entries else 'N/A'
 
     plt.figure(figsize=(12, 6))
 
-    for idx, dns_server in enumerate(all_dns_servers):
+    for idx, dns_server in enumerate(plot_dns_servers):
         offset = (idx - (num_dns - 1) / 2) * bar_width
         percent_values = []
 

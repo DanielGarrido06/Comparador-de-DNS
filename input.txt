@@ -3,9 +3,11 @@
 # DNS: lista de servidores DNS separados por vírgula
 # URLs: uma por linha após a linha DNS
 
-DNS: 1.1.1.1, 192.168.0.69
+DNS: 1.1.1.1, 8.8.8.8, 192.168.0.69
+https://www.nytimes.com
+https://www.bbc.com
+https://www.cnn.com
+https://www.uol.com.br
+https://www.estadao.com.br
 https://www.globo.com
-https://www.reddit.com
-https://www.youtube.com
-https://www.netflix.com
-https://washingtonpost.com
+

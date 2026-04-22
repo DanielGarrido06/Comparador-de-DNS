@@ -12,3 +12,7 @@ __pycache__/
 
 # mitmdump output
 flows_file
+
+# LaTeX manuscript sections
+metodologia_medicao.tex
+metodologia_medicao/

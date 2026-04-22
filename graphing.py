@@ -111,8 +111,21 @@ for fname in files:
 labels = LABELS
 sites = sorted({entry.site for entry in site_data})
 
+
+def get_latest_site_entries(site):
+    latest_entries = {}
+    for entry in site_data:
+        if entry.site != site:
+            continue
+
+        existing_entry = latest_entries.get(entry.dns)
+        if existing_entry is None or entry.timestamp > existing_entry.timestamp:
+            latest_entries[entry.dns] = entry
+
+    return list(latest_entries.values())
+
 for site in sites:
-    site_entries = [entry for entry in site_data if entry.site == site]
+    site_entries = get_latest_site_entries(site)
     dns_servers = sorted(entry.dns for entry in site_entries)
     x_positions = list(range(len(labels)))
     timestamp_label = site_entries[0].timestamp[:-4] if site_entries else 'N/A'
@@ -166,8 +179,13 @@ if comparison_sites and all_dns_servers:
         percent_values = []
 
         for site in comparison_sites:
-            baseline_total = totals_by_site_dns[site].get(baseline_dns)
-            current_total = totals_by_site_dns[site].get(dns_server)
+            site_entries = get_latest_site_entries(site)
+            site_totals = defaultdict(float)
+            for entry in site_entries:
+                site_totals[entry.dns] += sum(entry.groups.values())
+
+            baseline_total = site_totals.get(baseline_dns)
+            current_total = site_totals.get(dns_server)
 
             if baseline_total is None or baseline_total == 0 or current_total is None:
                 percent_change = float('nan')

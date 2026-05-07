@@ -1,6 +1,7 @@
 import os
 import re
 from collections import defaultdict
+from datetime import datetime
 
 import matplotlib.pyplot as plt
 
@@ -20,6 +21,8 @@ DNS_USED_PREFIX = 'DNS used:'
 LOADED_WEBPAGE_PREFIX = 'Loaded Webpage:'
 TIMESTAMP_PREFIX = 'Timestamp of first request:'
 BREAKDOWN_PREFIX = 'Breakdown by Content-Type:'
+TOTAL_KB_PREFIX = 'Total Kilobytes downloaded:'
+DNS_LEGEND_TITLE = 'Servidor DNS'
 
 # Define content type groups
 MEDIA_TYPES = ['image/', 'audio/', 'video/', 'font/']
@@ -65,6 +68,7 @@ graphics_dir = 'charts'
 os.makedirs(graphics_dir, exist_ok=True)
 
 site_data = []
+timeline_data = defaultdict(lambda: defaultdict(list))
 
 
 def get_or_create_site_data(site, dns, timestamp):
@@ -107,6 +111,12 @@ for fname in files:
 
         if line.startswith(TIMESTAMP_PREFIX):
             current_timestamp = line.split(':', 1)[1].strip()
+
+        if line.startswith(TOTAL_KB_PREFIX) and current_site and current_dns and current_timestamp:
+            total_value = line.split(':', 1)[1].strip()
+            # Expected format: "1234.56" (KB value)
+            total_kb = float(total_value)
+            timeline_data[current_site][current_dns].append((current_timestamp, total_kb))
 
         if line.startswith(BREAKDOWN_PREFIX) and current_site and current_dns and current_timestamp:
             j = i + 1
@@ -161,7 +171,7 @@ for site in sites:
     plt.title(f'Distribuição de Dados por Tipo de Conteúdo\n{site}\nMedição em: {timestamp_label}')
     plt.ylabel('Kilobytes (KB)')
     plt.xlabel('Tipo de Conteúdo')
-    plt.legend(title='Servidor DNS')
+    plt.legend(title=DNS_LEGEND_TITLE)
     plt.tight_layout()
 
     safe_site = sanitize_filename(site)
@@ -169,6 +179,70 @@ for site in sites:
     os.makedirs(site_dir, exist_ok=True)
     safe_timestamp = sanitize_filename(timestamp_label)
     plt.savefig(os.path.join(site_dir, f'{safe_timestamp}.png'), dpi=150)
+    plt.close()
+
+
+# Plot master timeline chart for each site showing historical total transfer over time.
+for site in sites:
+    site_timeline = timeline_data.get(site, {})
+    if not site_timeline:
+        continue
+
+    safe_site = sanitize_filename(site)
+    site_dir = os.path.join(graphics_dir, safe_site)
+    os.makedirs(site_dir, exist_ok=True)
+
+    plt.figure(figsize=(11, 5))
+    plotted_any_series = False
+    x_tick_positions = []
+    x_tick_labels = []
+
+    for dns_server in sorted(site_timeline.keys()):
+        raw_points = site_timeline[dns_server]
+        parsed_points = []
+
+        for timestamp_str, total_kb in raw_points:
+            try:
+                dt = datetime.strptime(timestamp_str, '%Y-%m-%d %H:%M:%S.%f')
+            except ValueError:
+                continue
+            parsed_points.append((dt, total_kb))
+
+        if not parsed_points:
+            continue
+
+        parsed_points.sort(key=lambda point: point[0])
+        x_values = list(range(1, len(parsed_points) + 1))
+        y_values = [point[1] for point in parsed_points]
+        legend_label = DNS_DISPLAY_NAMES.get(dns_server, dns_server)
+        plt.plot(x_values, y_values, marker='o', linewidth=2, label=legend_label)
+
+        # Prefer pihole timestamps as shared x-axis labels.
+        if legend_label.lower() == 'pihole':
+            x_tick_positions = x_values
+            x_tick_labels = [dt.strftime('%m-%d %H:%M') for dt, _ in parsed_points]
+        elif not x_tick_labels:
+            x_tick_positions = x_values
+            x_tick_labels = [dt.strftime('%m-%d %H:%M') for dt, _ in parsed_points]
+
+        plotted_any_series = True
+
+    if not plotted_any_series:
+        plt.close()
+        continue
+
+    plt.title(f'Transferência Total ao Longo do Tempo\n{site}')
+    plt.ylabel('Kilobytes (KB)')
+    plt.xlabel('Horário da Medição')
+    plt.legend(title=DNS_LEGEND_TITLE)
+    plt.grid(alpha=0.3)
+
+    if x_tick_labels:
+        plt.xticks(x_tick_positions, x_tick_labels, rotation=35, ha='right')
+
+    plt.tight_layout()
+    plt.savefig(os.path.join(site_dir, 'master_transfer_over_time.png'), dpi=150)
+    plt.close()
 
 
 # Plot one summary chart with percentage change in total downloaded data using
@@ -229,8 +303,9 @@ if comparison_sites and all_dns_servers:
     plt.title(f'Variação Percentual de Dados Baixados por Site\nComparado ao DNS: {baseline_label}\nMedição em: {timestamp_label}')
     plt.ylabel('Variação Percentual (%)')
     plt.xlabel('Site')
-    plt.legend(title='Servidor DNS')
+    plt.legend(title=DNS_LEGEND_TITLE)
     plt.tight_layout()
 
     safe_timestamp = sanitize_filename(timestamp_label)
     plt.savefig(os.path.join(comparativos_dir, f'{safe_timestamp}.png'), dpi=150)
+    plt.close()

@@ -6,10 +6,6 @@ __pycache__/
 *.py[cod]
 
 
-# Output result files
-*.txt
-!input.txt
-
 # mitmdump output
 flows_file
 

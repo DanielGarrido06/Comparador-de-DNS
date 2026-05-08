@@ -8124,3 +8124,1783 @@ Breakdown by Content-Type:
   application/octet-stream, text/plain: 0.02 KB
     Top 5 origin IPs:
       163.176.34.15: 9 responses, 0.02 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.nytimes.com
+Main document load time: 0.04 s
+Observed network window: 6.11 s
+Timestamp of first request: 2026-05-07 18:07:26.365
+Total requests: 238
+Unique URLs: 182
+Total Kilobytes downloaded: 14437.57
+
+Breakdown by Content-Type:
+  text/plain: 4557.24 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+      172.217.30.78: 8 responses, 1.02 KB
+      151.101.1.164: 1 responses, 0.01 KB
+  image/webp: 2073.28 KB
+    Top 5 origin IPs:
+      151.101.129.164: 44 responses, 2073.28 KB
+  text/javascript: 2065.17 KB
+    Top 5 origin IPs:
+      151.101.129.164: 28 responses, 1890.24 KB
+      172.217.30.99: 5 responses, 116.14 KB
+      13.224.220.171: 1 responses, 58.79 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.131.19: 1 responses, 1863.42 KB
+  image/jpeg: 994.36 KB
+    Top 5 origin IPs:
+      151.101.129.164: 13 responses, 994.36 KB
+  text/html: 770.13 KB
+    Top 5 origin IPs:
+      172.217.192.92: 2 responses, 394.74 KB
+      151.101.129.164: 2 responses, 299.94 KB
+      64.233.186.84: 1 responses, 75.36 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 728.61 KB
+    Top 5 origin IPs:
+      151.101.1.164: 8 responses, 361.02 KB
+      151.101.1.91: 4 responses, 243.03 KB
+      151.101.129.164: 7 responses, 123.93 KB
+      52.70.193.103: 2 responses, 0.47 KB
+      64.233.186.84: 1 responses, 0.09 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.53 KB
+  binary/octet-stream: 381.88 KB
+    Top 5 origin IPs:
+      151.101.129.164: 12 responses, 288.66 KB
+      34.160.144.191: 18 responses, 93.22 KB
+  image/png: 248.45 KB
+    Top 5 origin IPs:
+      151.101.129.164: 6 responses, 248.45 KB
+  application/javascript: 152.95 KB
+    Top 5 origin IPs:
+      64.233.186.84: 1 responses, 95.33 KB
+      172.217.192.92: 1 responses, 57.62 KB
+  font/woff2: 107.84 KB
+    Top 5 origin IPs:
+      172.217.29.227: 2 responses, 107.84 KB
+  text/css: 96.94 KB
+    Top 5 origin IPs:
+      151.101.129.164: 11 responses, 79.76 KB
+      151.101.1.164: 4 responses, 16.82 KB
+      64.233.186.84: 1 responses, 0.35 KB
+  image/vnd.microsoft.icon: 2.79 KB
+    Top 5 origin IPs:
+      151.101.129.164: 2 responses, 2.79 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.bbc.com
+Main document load time: 0.04 s
+Observed network window: 6.20 s
+Timestamp of first request: 2026-05-07 18:07:45.247
+Total requests: 122
+Unique URLs: 76
+Total Kilobytes downloaded: 8768.88
+
+Breakdown by Content-Type:
+  text/plain: 4556.24 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+      52.18.158.154: 1 responses, 0.04 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.131.19: 1 responses, 1863.42 KB
+  text/javascript: 628.96 KB
+    Top 5 origin IPs:
+      2.21.152.158: 13 responses, 516.30 KB
+      13.224.252.24: 3 responses, 112.65 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.53 KB
+  font/woff2: 388.97 KB
+    Top 5 origin IPs:
+      2.21.152.158: 6 responses, 388.97 KB
+  application/javascript: 329.83 KB
+    Top 5 origin IPs:
+      172.64.153.66: 4 responses, 197.90 KB
+      3.162.247.101: 5 responses, 83.90 KB
+      2.21.152.158: 1 responses, 39.66 KB
+      23.42.196.17: 1 responses, 8.17 KB
+      13.224.252.24: 1 responses, 0.20 KB
+  application/json: 246.99 KB
+    Top 5 origin IPs:
+      151.101.1.91: 5 responses, 243.57 KB
+      13.224.252.24: 3 responses, 2.19 KB
+      52.18.158.154: 6 responses, 1.14 KB
+      151.101.128.81: 1 responses, 0.08 KB
+  image/webp: 181.19 KB
+    Top 5 origin IPs:
+      2.21.152.158: 5 responses, 181.19 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  text/html: 82.80 KB
+    Top 5 origin IPs:
+      151.101.0.81: 1 responses, 82.71 KB
+      34.107.221.82: 1 responses, 0.09 KB
+      13.224.252.24: 1 responses, 0.00 KB
+  image/png: 1.57 KB
+    Top 5 origin IPs:
+      2.21.152.158: 3 responses, 1.57 KB
+  text/css: 1.18 KB
+    Top 5 origin IPs:
+      2.21.152.158: 1 responses, 1.18 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.cnn.com
+Main document load time: 0.03 s
+Observed network window: 6.34 s
+Timestamp of first request: 2026-05-07 18:08:03.890
+Total requests: 180
+Unique URLs: 146
+Total Kilobytes downloaded: 38271.97
+
+Breakdown by Content-Type:
+  video/mp4: 26468.22 KB
+    Top 5 origin IPs:
+      151.101.3.5: 6 responses, 26468.22 KB
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  image/webp: 1702.30 KB
+    Top 5 origin IPs:
+      151.101.3.5: 71 responses, 1702.30 KB
+  image/png: 1171.08 KB
+    Top 5 origin IPs:
+      151.101.3.5: 1 responses, 1119.02 KB
+      151.101.67.5: 4 responses, 52.06 KB
+  text/html: 589.39 KB
+    Top 5 origin IPs:
+      151.101.67.5: 1 responses, 513.82 KB
+      64.233.186.84: 1 responses, 75.29 KB
+      3.174.83.10: 1 responses, 0.20 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/javascript: 471.75 KB
+    Top 5 origin IPs:
+      151.101.67.5: 4 responses, 376.43 KB
+      64.233.186.84: 1 responses, 95.32 KB
+  font/woff2: 401.15 KB
+    Top 5 origin IPs:
+      151.101.67.5: 4 responses, 293.31 KB
+      172.217.29.227: 2 responses, 107.84 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.53 KB
+  application/json: 314.45 KB
+    Top 5 origin IPs:
+      151.101.1.91: 5 responses, 243.57 KB
+      151.101.67.5: 5 responses, 69.54 KB
+      104.17.207.5: 1 responses, 1.23 KB
+      64.233.186.84: 1 responses, 0.09 KB
+  text/javascript: 231.06 KB
+    Top 5 origin IPs:
+      3.174.83.10: 2 responses, 231.06 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/svg+xml: 5.55 KB
+    Top 5 origin IPs:
+      151.101.67.5: 13 responses, 5.55 KB
+  image/x-icon: 5.09 KB
+    Top 5 origin IPs:
+      151.101.67.5: 1 responses, 5.09 KB
+  text/css: 4.56 KB
+    Top 5 origin IPs:
+      151.101.67.5: 1 responses, 4.21 KB
+      64.233.186.84: 1 responses, 0.35 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.uol.com.br
+Main document load time: 0.04 s
+Observed network window: 6.94 s
+Timestamp of first request: 2026-05-07 18:08:23.299
+Total requests: 181
+Unique URLs: 140
+Total Kilobytes downloaded: 10856.12
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.1.91: 32 responses, 4556.21 KB
+      200.147.35.150: 1 responses, 0.01 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  video/mp2t: 1436.07 KB
+    Top 5 origin IPs:
+      186.234.157.35: 4 responses, 1436.07 KB
+  application/javascript: 885.80 KB
+    Top 5 origin IPs:
+      108.158.194.125: 2 responses, 363.97 KB
+      13.227.110.19: 9 responses, 214.38 KB
+      104.18.35.13: 1 responses, 137.11 KB
+      13.227.207.54: 1 responses, 74.90 KB
+      13.227.207.32: 1 responses, 66.62 KB
+  text/javascript: 414.52 KB
+    Top 5 origin IPs:
+      108.158.194.41: 17 responses, 230.07 KB
+      142.251.133.74: 1 responses, 147.45 KB
+      108.139.182.16: 2 responses, 35.96 KB
+      13.227.207.108: 1 responses, 1.03 KB
+  text/html: 410.03 KB
+    Top 5 origin IPs:
+      142.251.133.74: 1 responses, 272.82 KB
+      108.139.182.16: 1 responses, 136.25 KB
+      3.163.63.78: 3 responses, 0.52 KB
+      13.227.110.19: 1 responses, 0.35 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.1.91: 1 responses, 394.53 KB
+  application/json: 249.00 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 243.57 KB
+      108.158.194.41: 1 responses, 3.24 KB
+      200.147.99.204: 3 responses, 0.99 KB
+      200.147.36.28: 1 responses, 0.60 KB
+      108.139.182.16: 1 responses, 0.29 KB
+  image/png: 198.04 KB
+    Top 5 origin IPs:
+      186.234.166.8: 3 responses, 107.55 KB
+      108.157.173.72: 3 responses, 90.49 KB
+  image/jpeg: 109.43 KB
+    Top 5 origin IPs:
+      142.250.79.206: 1 responses, 109.43 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  webp: 77.14 KB
+    Top 5 origin IPs:
+      108.157.173.72: 9 responses, 77.14 KB
+  application/x-mpegurl: 63.77 KB
+    Top 5 origin IPs:
+      186.234.157.35: 2 responses, 63.77 KB
+  application/x-javascript: 45.21 KB
+    Top 5 origin IPs:
+      13.224.252.113: 1 responses, 45.21 KB
+  image/webp: 20.20 KB
+    Top 5 origin IPs:
+      108.157.173.72: 2 responses, 20.20 KB
+  image/svg+xml: 11.64 KB
+    Top 5 origin IPs:
+      108.157.173.72: 11 responses, 11.52 KB
+      186.234.166.13: 1 responses, 0.12 KB
+  image/gif: 11.57 KB
+    Top 5 origin IPs:
+      200.147.36.72: 1 responses, 11.53 KB
+      108.139.166.10: 1 responses, 0.05 KB
+  text/css: 10.62 KB
+    Top 5 origin IPs:
+      13.227.207.32: 1 responses, 10.62 KB
+  image/x-icon: 4.19 KB
+    Top 5 origin IPs:
+      108.157.173.72: 1 responses, 4.19 KB
+  text/xml: 1.51 KB
+    Top 5 origin IPs:
+      172.217.29.162: 5 responses, 1.51 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.estadao.com.br
+Main document load time: 0.04 s
+Observed network window: 7.77 s
+Timestamp of first request: 2026-05-07 18:08:42.188
+Total requests: 138
+Unique URLs: 100
+Total Kilobytes downloaded: 8984.17
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.1.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  text/javascript: 696.51 KB
+    Top 5 origin IPs:
+      2.19.10.26: 41 responses, 695.47 KB
+      13.227.207.108: 1 responses, 1.04 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.1.91: 1 responses, 394.53 KB
+  application/javascript: 388.12 KB
+    Top 5 origin IPs:
+      104.18.35.13: 1 responses, 199.86 KB
+      64.233.186.84: 1 responses, 95.33 KB
+      13.227.207.54: 1 responses, 74.97 KB
+      2.16.169.134: 1 responses, 9.31 KB
+      172.67.201.181: 1 responses, 8.63 KB
+  text/html: 375.97 KB
+    Top 5 origin IPs:
+      2.19.10.26: 1 responses, 300.17 KB
+      64.233.186.84: 1 responses, 75.21 KB
+      172.217.29.110: 1 responses, 0.50 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 256.89 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 243.57 KB
+      23.219.67.208: 1 responses, 11.65 KB
+      164.90.129.68: 1 responses, 1.13 KB
+      2.19.10.26: 2 responses, 0.27 KB
+      64.233.186.84: 1 responses, 0.09 KB
+  font/woff2: 200.87 KB
+    Top 5 origin IPs:
+      172.217.29.227: 5 responses, 175.87 KB
+      2.19.10.26: 1 responses, 25.00 KB
+  image/avif: 97.24 KB
+    Top 5 origin IPs:
+      2.19.10.26: 3 responses, 97.24 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  application/x-javascript: 45.21 KB
+    Top 5 origin IPs:
+      13.224.252.113: 1 responses, 45.21 KB
+  image/webp: 6.71 KB
+    Top 5 origin IPs:
+      23.219.67.208: 1 responses, 6.71 KB
+  image/png: 4.13 KB
+    Top 5 origin IPs:
+      2.19.10.26: 1 responses, 2.79 KB
+      23.219.67.208: 1 responses, 1.33 KB
+  image/vnd.microsoft.icon: 3.65 KB
+    Top 5 origin IPs:
+      2.19.10.26: 1 responses, 3.65 KB
+  text/css: 1.50 KB
+    Top 5 origin IPs:
+      2.19.10.26: 1 responses, 1.15 KB
+      64.233.186.84: 1 responses, 0.35 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.globo.com
+Main document load time: 0.04 s
+Observed network window: 6.30 s
+Timestamp of first request: 2026-05-07 18:09:00.613
+Total requests: 211
+Unique URLs: 145
+Total Kilobytes downloaded: 10926.33
+
+Breakdown by Content-Type:
+  text/plain: 4556.38 KB
+    Top 5 origin IPs:
+      151.101.65.91: 32 responses, 4556.21 KB
+      167.234.230.153: 1 responses, 0.09 KB
+      35.199.80.253: 1 responses, 0.08 KB
+  application/javascript: 1922.87 KB
+    Top 5 origin IPs:
+      186.192.91.5: 1 responses, 961.20 KB
+      186.192.83.2: 8 responses, 852.85 KB
+      104.19.219.32: 3 responses, 89.20 KB
+      151.101.66.217: 1 responses, 9.85 KB
+      91.134.34.33: 1 responses, 9.13 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  application/octet-stream: 809.26 KB
+    Top 5 origin IPs:
+      186.192.83.2: 4 responses, 414.73 KB
+      151.101.65.91: 1 responses, 394.53 KB
+  text/html: 337.54 KB
+    Top 5 origin IPs:
+      186.192.83.15: 2 responses, 336.62 KB
+      34.49.91.78: 2 responses, 0.83 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 293.10 KB
+    Top 5 origin IPs:
+      151.101.193.91: 5 responses, 243.57 KB
+      132.145.205.224: 1 responses, 19.32 KB
+      137.131.184.72: 1 responses, 16.38 KB
+      34.95.219.48: 1 responses, 5.48 KB
+      64.181.178.53: 16 responses, 3.69 KB
+  image/avif: 264.85 KB
+    Top 5 origin IPs:
+      186.192.91.9: 19 responses, 264.85 KB
+  javascript charset=utf-8: 228.24 KB
+    Top 5 origin IPs:
+      186.192.83.2: 1 responses, 228.24 KB
+  image/gif: 190.33 KB
+    Top 5 origin IPs:
+      186.192.91.9: 1 responses, 190.33 KB
+  text/javascript: 178.72 KB
+    Top 5 origin IPs:
+      142.251.133.74: 1 responses, 149.76 KB
+      34.160.169.60: 5 responses, 27.11 KB
+      186.192.83.2: 2 responses, 1.85 KB
+  image/webp: 97.40 KB
+    Top 5 origin IPs:
+      186.192.91.9: 8 responses, 76.13 KB
+      186.192.83.2: 1 responses, 21.27 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  application/x-javascript: 42.25 KB
+    Top 5 origin IPs:
+      186.192.83.2: 1 responses, 42.25 KB
+  image/svg+xml: 27.82 KB
+    Top 5 origin IPs:
+      186.192.83.2: 29 responses, 27.82 KB
+  text/css: 20.90 KB
+    Top 5 origin IPs:
+      186.192.91.5: 1 responses, 18.76 KB
+      186.192.83.2: 2 responses, 2.13 KB
+  application/octet-stream, text/plain: 0.03 KB
+    Top 5 origin IPs:
+      163.176.34.15: 17 responses, 0.03 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.nytimes.com
+Main document load time: 0.04 s
+Observed network window: 6.46 s
+Timestamp of first request: 2026-05-07 18:19:06.310
+Total requests: 239
+Unique URLs: 183
+Total Kilobytes downloaded: 14579.23
+
+Breakdown by Content-Type:
+  text/plain: 4557.24 KB
+    Top 5 origin IPs:
+      151.101.1.91: 32 responses, 4556.21 KB
+      142.250.79.206: 8 responses, 1.02 KB
+      151.101.193.164: 1 responses, 0.01 KB
+  image/webp: 2157.83 KB
+    Top 5 origin IPs:
+      151.101.193.164: 28 responses, 2127.45 KB
+      151.101.1.164: 16 responses, 30.38 KB
+  text/javascript: 2065.10 KB
+    Top 5 origin IPs:
+      151.101.1.164: 9 responses, 1584.09 KB
+      151.101.193.164: 19 responses, 306.15 KB
+      172.217.30.35: 5 responses, 116.14 KB
+      13.224.220.171: 1 responses, 58.73 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  image/jpeg: 961.44 KB
+    Top 5 origin IPs:
+      151.101.193.164: 8 responses, 540.09 KB
+      151.101.1.164: 4 responses, 421.35 KB
+  text/html: 772.81 KB
+    Top 5 origin IPs:
+      172.217.192.92: 2 responses, 394.77 KB
+      151.101.1.164: 1 responses, 302.04 KB
+      142.251.0.84: 1 responses, 75.38 KB
+      151.101.193.164: 1 responses, 0.54 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 726.37 KB
+    Top 5 origin IPs:
+      151.101.1.164: 15 responses, 482.18 KB
+      151.101.193.91: 5 responses, 243.57 KB
+      52.70.193.103: 1 responses, 0.39 KB
+      142.251.0.84: 1 responses, 0.09 KB
+      52.203.246.132: 1 responses, 0.07 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.1.91: 1 responses, 394.53 KB
+  binary/octet-stream: 381.88 KB
+    Top 5 origin IPs:
+      151.101.1.164: 12 responses, 288.66 KB
+      34.160.144.191: 18 responses, 93.22 KB
+  image/png: 338.08 KB
+    Top 5 origin IPs:
+      151.101.193.164: 4 responses, 205.17 KB
+      151.101.1.164: 3 responses, 132.92 KB
+  application/javascript: 152.96 KB
+    Top 5 origin IPs:
+      142.251.0.84: 1 responses, 95.34 KB
+      172.217.192.92: 1 responses, 57.62 KB
+  font/woff2: 107.84 KB
+    Top 5 origin IPs:
+      172.217.172.163: 2 responses, 107.84 KB
+  text/css: 96.94 KB
+    Top 5 origin IPs:
+      151.101.1.164: 8 responses, 83.77 KB
+      151.101.193.164: 7 responses, 12.82 KB
+      142.251.0.84: 1 responses, 0.35 KB
+  image/vnd.microsoft.icon: 2.79 KB
+    Top 5 origin IPs:
+      151.101.1.164: 2 responses, 2.79 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.bbc.com
+Main document load time: 0.03 s
+Observed network window: 6.21 s
+Timestamp of first request: 2026-05-07 18:19:25.400
+Total requests: 122
+Unique URLs: 76
+Total Kilobytes downloaded: 8788.06
+
+Breakdown by Content-Type:
+  text/plain: 4556.24 KB
+    Top 5 origin IPs:
+      151.101.1.91: 32 responses, 4556.21 KB
+      52.51.111.85: 1 responses, 0.04 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  text/javascript: 628.96 KB
+    Top 5 origin IPs:
+      2.21.152.158: 13 responses, 516.30 KB
+      13.224.252.29: 3 responses, 112.65 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.1.91: 1 responses, 394.53 KB
+  font/woff2: 388.97 KB
+    Top 5 origin IPs:
+      2.21.152.158: 6 responses, 388.97 KB
+  application/javascript: 329.81 KB
+    Top 5 origin IPs:
+      104.18.34.190: 4 responses, 197.88 KB
+      3.162.247.49: 5 responses, 83.90 KB
+      2.21.152.158: 2 responses, 47.83 KB
+      13.224.252.29: 1 responses, 0.20 KB
+  application/json: 246.99 KB
+    Top 5 origin IPs:
+      151.101.193.91: 5 responses, 243.57 KB
+      13.224.252.29: 3 responses, 2.19 KB
+      52.51.111.85: 6 responses, 1.14 KB
+      151.101.0.81: 1 responses, 0.08 KB
+  image/webp: 199.49 KB
+    Top 5 origin IPs:
+      2.17.128.155: 5 responses, 199.49 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  text/html: 83.69 KB
+    Top 5 origin IPs:
+      151.101.192.81: 1 responses, 83.60 KB
+      34.107.221.82: 1 responses, 0.09 KB
+      13.224.252.29: 1 responses, 0.00 KB
+  image/png: 1.57 KB
+    Top 5 origin IPs:
+      2.21.152.158: 3 responses, 1.57 KB
+  text/css: 1.18 KB
+    Top 5 origin IPs:
+      2.21.152.158: 1 responses, 1.18 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.cnn.com
+Main document load time: 0.03 s
+Observed network window: 6.55 s
+Timestamp of first request: 2026-05-07 18:19:43.912
+Total requests: 180
+Unique URLs: 146
+Total Kilobytes downloaded: 38271.95
+
+Breakdown by Content-Type:
+  video/mp4: 26468.22 KB
+    Top 5 origin IPs:
+      151.101.3.5: 6 responses, 26468.22 KB
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.1.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  image/webp: 1702.30 KB
+    Top 5 origin IPs:
+      151.101.3.5: 71 responses, 1702.30 KB
+  image/png: 1171.08 KB
+    Top 5 origin IPs:
+      151.101.3.5: 5 responses, 1171.08 KB
+  text/html: 589.31 KB
+    Top 5 origin IPs:
+      151.101.3.5: 1 responses, 513.75 KB
+      142.251.0.84: 1 responses, 75.28 KB
+      3.174.59.53: 1 responses, 0.20 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/javascript: 471.77 KB
+    Top 5 origin IPs:
+      151.101.3.5: 4 responses, 376.43 KB
+      142.251.0.84: 1 responses, 95.34 KB
+  font/woff2: 401.15 KB
+    Top 5 origin IPs:
+      151.101.3.5: 4 responses, 293.31 KB
+      172.217.172.163: 2 responses, 107.84 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.1.91: 1 responses, 394.53 KB
+  application/json: 314.50 KB
+    Top 5 origin IPs:
+      151.101.1.91: 5 responses, 243.57 KB
+      151.101.3.5: 5 responses, 69.54 KB
+      151.101.129.229: 1 responses, 1.29 KB
+      142.251.0.84: 1 responses, 0.09 KB
+  text/javascript: 231.05 KB
+    Top 5 origin IPs:
+      3.174.59.53: 2 responses, 231.05 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/svg+xml: 5.55 KB
+    Top 5 origin IPs:
+      151.101.3.5: 13 responses, 5.55 KB
+  image/x-icon: 5.09 KB
+    Top 5 origin IPs:
+      151.101.3.5: 1 responses, 5.09 KB
+  text/css: 4.56 KB
+    Top 5 origin IPs:
+      151.101.3.5: 1 responses, 4.21 KB
+      142.251.0.84: 1 responses, 0.35 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.uol.com.br
+Main document load time: 0.03 s
+Observed network window: 7.37 s
+Timestamp of first request: 2026-05-07 18:20:02.977
+Total requests: 171
+Unique URLs: 130
+Total Kilobytes downloaded: 10813.27
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.1.91: 32 responses, 4556.21 KB
+      186.234.165.10: 1 responses, 0.01 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  video/mp2t: 1308.84 KB
+    Top 5 origin IPs:
+      186.234.157.38: 4 responses, 1308.84 KB
+  application/javascript: 885.94 KB
+    Top 5 origin IPs:
+      3.174.59.124: 2 responses, 364.10 KB
+      108.158.186.83: 9 responses, 214.38 KB
+      104.18.35.13: 1 responses, 137.11 KB
+      3.174.59.60: 1 responses, 74.90 KB
+      18.161.205.97: 1 responses, 66.62 KB
+  text/javascript: 414.52 KB
+    Top 5 origin IPs:
+      18.64.207.83: 17 responses, 230.07 KB
+      142.251.132.42: 1 responses, 147.45 KB
+      108.158.186.78: 2 responses, 35.96 KB
+      13.33.129.23: 1 responses, 1.03 KB
+  text/html: 409.39 KB
+    Top 5 origin IPs:
+      142.251.132.42: 1 responses, 272.82 KB
+      108.158.186.78: 1 responses, 135.60 KB
+      108.158.137.102: 3 responses, 0.52 KB
+      108.158.186.83: 1 responses, 0.35 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.1.91: 1 responses, 394.53 KB
+  application/json: 245.77 KB
+    Top 5 origin IPs:
+      151.101.1.91: 5 responses, 243.57 KB
+      200.147.99.204: 3 responses, 0.99 KB
+      200.147.36.28: 1 responses, 0.60 KB
+      108.158.186.78: 1 responses, 0.29 KB
+      108.158.186.21: 1 responses, 0.14 KB
+  image/png: 199.46 KB
+    Top 5 origin IPs:
+      200.147.36.68: 3 responses, 108.98 KB
+      108.157.173.72: 3 responses, 90.49 KB
+  image/jpeg: 109.43 KB
+    Top 5 origin IPs:
+      142.251.132.46: 1 responses, 109.43 KB
+  font/woff2: 97.86 KB
+    Top 5 origin IPs:
+      13.33.129.45: 6 responses, 97.86 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  application/x-mpegurl: 63.77 KB
+    Top 5 origin IPs:
+      186.234.157.38: 2 responses, 63.77 KB
+  webp: 56.13 KB
+    Top 5 origin IPs:
+      108.157.173.72: 8 responses, 56.13 KB
+  application/x-javascript: 45.21 KB
+    Top 5 origin IPs:
+      3.174.59.111: 1 responses, 45.21 KB
+  image/webp: 20.20 KB
+    Top 5 origin IPs:
+      108.157.173.72: 2 responses, 20.20 KB
+  image/svg+xml: 11.92 KB
+    Top 5 origin IPs:
+      108.157.173.72: 11 responses, 11.52 KB
+      200.147.36.72: 1 responses, 0.28 KB
+      186.234.166.13: 1 responses, 0.12 KB
+  image/gif: 11.57 KB
+    Top 5 origin IPs:
+      200.147.36.72: 1 responses, 11.53 KB
+      13.33.129.9: 1 responses, 0.05 KB
+  text/css: 10.62 KB
+    Top 5 origin IPs:
+      18.161.205.97: 1 responses, 10.62 KB
+  font/ttf: 9.65 KB
+    Top 5 origin IPs:
+      13.33.129.45: 1 responses, 9.65 KB
+  image/x-icon: 4.19 KB
+    Top 5 origin IPs:
+      108.157.173.72: 1 responses, 4.19 KB
+  text/xml: 1.43 KB
+    Top 5 origin IPs:
+      142.251.132.226: 5 responses, 1.43 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.estadao.com.br
+Main document load time: 0.04 s
+Observed network window: 7.59 s
+Timestamp of first request: 2026-05-07 18:20:21.891
+Total requests: 139
+Unique URLs: 101
+Total Kilobytes downloaded: 8964.82
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.1.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.67.19: 1 responses, 1863.42 KB
+  text/javascript: 696.51 KB
+    Top 5 origin IPs:
+      23.196.224.75: 41 responses, 695.47 KB
+      13.33.129.23: 1 responses, 1.04 KB
+  application/octet-stream: 394.53 KB
+    Top 5 origin IPs:
+      151.101.1.91: 1 responses, 394.53 KB
+  application/javascript: 388.13 KB
+    Top 5 origin IPs:
+      104.18.35.13: 1 responses, 199.86 KB
+      142.251.0.84: 1 responses, 95.34 KB
+      3.174.59.60: 1 responses, 74.97 KB
+      2.17.162.16: 1 responses, 9.31 KB
+      104.21.92.250: 1 responses, 8.63 KB
+  text/html: 377.64 KB
+    Top 5 origin IPs:
+      23.196.224.75: 1 responses, 301.85 KB
+      142.251.0.84: 1 responses, 75.21 KB
+      142.251.132.46: 1 responses, 0.50 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 257.03 KB
+    Top 5 origin IPs:
+      151.101.1.91: 5 responses, 243.57 KB
+      2.17.162.5: 1 responses, 11.65 KB
+      164.90.129.68: 1 responses, 1.13 KB
+      23.196.224.75: 3 responses, 0.41 KB
+      142.251.0.84: 1 responses, 0.09 KB
+  font/woff2: 178.37 KB
+    Top 5 origin IPs:
+      172.217.172.163: 4 responses, 153.37 KB
+      23.196.224.75: 1 responses, 25.00 KB
+  image/avif: 97.24 KB
+    Top 5 origin IPs:
+      23.196.224.75: 3 responses, 97.24 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  application/x-javascript: 45.21 KB
+    Top 5 origin IPs:
+      3.174.59.111: 1 responses, 45.21 KB
+  image/webp: 6.71 KB
+    Top 5 origin IPs:
+      2.17.162.5: 1 responses, 6.71 KB
+  image/png: 5.46 KB
+    Top 5 origin IPs:
+      23.196.224.75: 1 responses, 2.79 KB
+      2.17.162.5: 2 responses, 2.66 KB
+  image/vnd.microsoft.icon: 3.65 KB
+    Top 5 origin IPs:
+      23.196.224.75: 1 responses, 3.65 KB
+  text/css: 1.50 KB
+    Top 5 origin IPs:
+      23.196.224.75: 1 responses, 1.15 KB
+      142.251.0.84: 1 responses, 0.35 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.globo.com
+Main document load time: 0.03 s
+Observed network window: 6.14 s
+Timestamp of first request: 2026-05-07 18:20:39.990
+Total requests: 218
+Unique URLs: 140
+Total Kilobytes downloaded: 10714.03
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.1.91: 32 responses, 4556.21 KB
+  application/javascript: 1877.68 KB
+    Top 5 origin IPs:
+      186.192.91.5: 1 responses, 961.20 KB
+      186.192.83.2: 7 responses, 807.69 KB
+      104.19.220.32: 3 responses, 89.20 KB
+      151.101.66.217: 1 responses, 9.85 KB
+      91.134.5.196: 1 responses, 9.11 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.67.19: 1 responses, 1863.42 KB
+  application/octet-stream: 809.26 KB
+    Top 5 origin IPs:
+      186.192.83.2: 4 responses, 414.73 KB
+      151.101.1.91: 1 responses, 394.53 KB
+  text/html: 337.43 KB
+    Top 5 origin IPs:
+      186.192.83.15: 2 responses, 336.45 KB
+      34.49.91.78: 2 responses, 0.83 KB
+      34.107.221.82: 1 responses, 0.09 KB
+      186.192.83.2: 1 responses, 0.07 KB
+  application/json: 292.66 KB
+    Top 5 origin IPs:
+      151.101.65.91: 5 responses, 243.57 KB
+      132.145.205.224: 1 responses, 19.32 KB
+      137.131.184.72: 1 responses, 16.31 KB
+      34.95.219.48: 1 responses, 5.48 KB
+      64.181.178.53: 16 responses, 3.69 KB
+  image/avif: 286.78 KB
+    Top 5 origin IPs:
+      186.192.91.9: 20 responses, 286.78 KB
+  javascript charset=utf-8: 228.24 KB
+    Top 5 origin IPs:
+      186.192.83.2: 1 responses, 228.24 KB
+  text/javascript: 178.82 KB
+    Top 5 origin IPs:
+      142.251.132.42: 1 responses, 149.79 KB
+      34.160.169.60: 5 responses, 27.18 KB
+      186.192.83.2: 2 responses, 1.85 KB
+  image/webp: 99.33 KB
+    Top 5 origin IPs:
+      186.192.91.9: 7 responses, 78.06 KB
+      186.192.83.2: 1 responses, 21.27 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  application/x-javascript: 42.25 KB
+    Top 5 origin IPs:
+      186.192.83.2: 1 responses, 42.25 KB
+  image/svg+xml: 27.82 KB
+    Top 5 origin IPs:
+      186.192.83.2: 29 responses, 27.82 KB
+  text/css: 20.90 KB
+    Top 5 origin IPs:
+      186.192.91.5: 1 responses, 18.76 KB
+      186.192.83.2: 2 responses, 2.13 KB
+  application/octet-stream, text/plain: 0.03 KB
+    Top 5 origin IPs:
+      163.176.34.15: 16 responses, 0.03 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.nytimes.com
+Main document load time: 0.04 s
+Observed network window: 6.59 s
+Timestamp of first request: 2026-05-08 10:59:23.960
+Total requests: 250
+Unique URLs: 191
+Total Kilobytes downloaded: 52570.32
+
+Breakdown by Content-Type:
+  video/mp4: 37516.06 KB
+    Top 5 origin IPs:
+      151.101.65.164: 4 responses, 37516.06 KB
+  text/plain: 4557.24 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+      142.251.132.238: 8 responses, 1.02 KB
+      151.101.65.164: 1 responses, 0.01 KB
+  image/webp: 2525.82 KB
+    Top 5 origin IPs:
+      151.101.129.164: 32 responses, 2495.44 KB
+      151.101.193.164: 16 responses, 30.38 KB
+  text/javascript: 2007.70 KB
+    Top 5 origin IPs:
+      151.101.193.164: 9 responses, 1583.81 KB
+      151.101.129.164: 20 responses, 307.75 KB
+      172.217.162.195: 5 responses, 116.14 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.195.19: 1 responses, 1863.42 KB
+  image/jpeg: 961.44 KB
+    Top 5 origin IPs:
+      151.101.129.164: 8 responses, 540.09 KB
+      151.101.65.164: 4 responses, 421.35 KB
+  text/html: 799.92 KB
+    Top 5 origin IPs:
+      142.251.0.92: 2 responses, 394.50 KB
+      151.101.193.164: 1 responses, 329.46 KB
+      64.233.190.84: 1 responses, 75.34 KB
+      151.101.129.164: 1 responses, 0.54 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 722.98 KB
+    Top 5 origin IPs:
+      151.101.65.164: 9 responses, 351.06 KB
+      151.101.129.91: 5 responses, 248.39 KB
+      151.101.193.164: 7 responses, 122.96 KB
+      52.203.246.132: 1 responses, 0.39 KB
+      64.233.190.84: 1 responses, 0.09 KB
+  image/png: 475.52 KB
+    Top 5 origin IPs:
+      151.101.129.164: 4 responses, 342.60 KB
+      151.101.65.164: 1 responses, 127.48 KB
+      151.101.193.164: 2 responses, 5.44 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  binary/octet-stream: 381.88 KB
+    Top 5 origin IPs:
+      151.101.1.164: 12 responses, 288.66 KB
+      34.160.144.191: 18 responses, 93.22 KB
+  application/javascript: 152.91 KB
+    Top 5 origin IPs:
+      64.233.190.84: 1 responses, 95.31 KB
+      142.251.0.92: 1 responses, 57.60 KB
+  font/woff2: 107.84 KB
+    Top 5 origin IPs:
+      142.251.129.227: 2 responses, 107.84 KB
+  text/css: 98.66 KB
+    Top 5 origin IPs:
+      151.101.193.164: 2 responses, 54.52 KB
+      151.101.65.164: 4 responses, 16.82 KB
+      151.101.129.164: 8 responses, 14.54 KB
+      151.101.1.164: 2 responses, 12.42 KB
+      64.233.190.84: 1 responses, 0.35 KB
+  image/vnd.microsoft.icon: 2.79 KB
+    Top 5 origin IPs:
+      151.101.193.164: 2 responses, 2.79 KB
+  text/vtt: 1.60 KB
+    Top 5 origin IPs:
+      151.101.65.164: 2 responses, 1.60 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.bbc.com
+Main document load time: 0.03 s
+Observed network window: 6.22 s
+Timestamp of first request: 2026-05-08 10:59:42.788
+Total requests: 120
+Unique URLs: 74
+Total Kilobytes downloaded: 8518.14
+
+Breakdown by Content-Type:
+  text/plain: 4556.24 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+      63.34.176.185: 1 responses, 0.04 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.195.19: 1 responses, 1863.42 KB
+  text/javascript: 625.52 KB
+    Top 5 origin IPs:
+      2.20.128.161: 13 responses, 516.30 KB
+      13.33.129.129: 3 responses, 109.22 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  font/woff2: 388.97 KB
+    Top 5 origin IPs:
+      2.20.128.161: 6 responses, 388.97 KB
+  application/json: 251.81 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 248.39 KB
+      13.33.129.129: 3 responses, 2.19 KB
+      63.34.176.185: 6 responses, 1.14 KB
+      151.101.128.81: 1 responses, 0.08 KB
+  application/javascript: 131.75 KB
+    Top 5 origin IPs:
+      108.158.186.26: 5 responses, 83.73 KB
+      2.20.128.161: 2 responses, 47.83 KB
+      13.33.129.129: 1 responses, 0.20 KB
+  image/webp: 127.70 KB
+    Top 5 origin IPs:
+      2.20.128.161: 7 responses, 127.70 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  text/html: 82.21 KB
+    Top 5 origin IPs:
+      151.101.0.81: 1 responses, 82.12 KB
+      34.107.221.82: 1 responses, 0.09 KB
+      13.33.129.129: 1 responses, 0.00 KB
+  image/png: 1.57 KB
+    Top 5 origin IPs:
+      2.20.128.161: 3 responses, 1.57 KB
+  text/css: 1.18 KB
+    Top 5 origin IPs:
+      2.20.128.161: 1 responses, 1.18 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.cnn.com
+Main document load time: 0.04 s
+Observed network window: 6.17 s
+Timestamp of first request: 2026-05-08 11:00:01.373
+Total requests: 187
+Unique URLs: 151
+Total Kilobytes downloaded: 23834.02
+
+Breakdown by Content-Type:
+  video/mp4: 11933.07 KB
+    Top 5 origin IPs:
+      151.101.67.5: 6 responses, 11933.07 KB
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.195.19: 1 responses, 1863.42 KB
+  image/webp: 1563.26 KB
+    Top 5 origin IPs:
+      151.101.67.5: 73 responses, 1563.26 KB
+  image/png: 1171.08 KB
+    Top 5 origin IPs:
+      151.101.67.5: 1 responses, 1119.02 KB
+      151.101.131.5: 4 responses, 52.06 KB
+  text/html: 592.62 KB
+    Top 5 origin IPs:
+      151.101.131.5: 1 responses, 517.04 KB
+      64.233.190.84: 1 responses, 75.29 KB
+      18.161.205.84: 1 responses, 0.20 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/javascript: 471.76 KB
+    Top 5 origin IPs:
+      151.101.131.5: 4 responses, 376.43 KB
+      64.233.190.84: 1 responses, 95.33 KB
+  font/woff2: 401.15 KB
+    Top 5 origin IPs:
+      151.101.131.5: 4 responses, 293.31 KB
+      142.251.129.227: 2 responses, 107.84 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  application/json: 319.32 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 248.39 KB
+      151.101.131.5: 5 responses, 69.54 KB
+      151.101.65.229: 1 responses, 1.29 KB
+      64.233.190.84: 1 responses, 0.09 KB
+  text/javascript: 261.39 KB
+    Top 5 origin IPs:
+      18.161.205.84: 2 responses, 261.39 KB
+  image/jpeg: 197.25 KB
+    Top 5 origin IPs:
+      151.101.67.5: 1 responses, 197.25 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/svg+xml: 6.08 KB
+    Top 5 origin IPs:
+      151.101.131.5: 14 responses, 6.08 KB
+  image/x-icon: 5.09 KB
+    Top 5 origin IPs:
+      151.101.131.5: 1 responses, 5.09 KB
+  text/css: 4.56 KB
+    Top 5 origin IPs:
+      151.101.131.5: 1 responses, 4.21 KB
+      64.233.190.84: 1 responses, 0.35 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.uol.com.br
+Main document load time: 0.04 s
+Observed network window: 6.26 s
+Timestamp of first request: 2026-05-08 11:00:20.345
+Total requests: 174
+Unique URLs: 135
+Total Kilobytes downloaded: 17003.77
+
+Breakdown by Content-Type:
+  video/mp4: 6467.38 KB
+    Top 5 origin IPs:
+      177.154.1.12: 1 responses, 6467.38 KB
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+      200.147.35.150: 1 responses, 0.01 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.195.19: 1 responses, 1863.42 KB
+  video/mp2t: 1289.93 KB
+    Top 5 origin IPs:
+      200.147.253.12: 4 responses, 1289.93 KB
+  application/javascript: 748.83 KB
+    Top 5 origin IPs:
+      3.174.59.124: 2 responses, 364.10 KB
+      18.64.207.53: 9 responses, 214.38 KB
+      3.174.59.25: 1 responses, 74.90 KB
+      18.161.205.25: 1 responses, 66.62 KB
+      108.158.186.35: 2 responses, 18.23 KB
+  text/html: 409.48 KB
+    Top 5 origin IPs:
+      142.250.219.138: 1 responses, 272.82 KB
+      3.174.59.73: 1 responses, 134.93 KB
+      142.250.218.238: 1 responses, 0.77 KB
+      108.158.137.91: 3 responses, 0.52 KB
+      18.64.207.53: 1 responses, 0.35 KB
+  text/javascript: 408.71 KB
+    Top 5 origin IPs:
+      18.64.207.109: 16 responses, 227.17 KB
+      142.250.219.138: 1 responses, 147.45 KB
+      3.174.59.73: 1 responses, 33.06 KB
+      13.33.129.53: 1 responses, 1.03 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  application/json: 250.41 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 248.39 KB
+      200.147.99.204: 2 responses, 0.93 KB
+      200.147.100.18: 1 responses, 0.74 KB
+      3.174.59.73: 1 responses, 0.28 KB
+      13.33.129.79: 2 responses, 0.06 KB
+  image/png: 186.42 KB
+    Top 5 origin IPs:
+      186.234.166.8: 3 responses, 97.50 KB
+      108.157.173.96: 3 responses, 88.92 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/jpeg: 86.95 KB
+    Top 5 origin IPs:
+      172.217.162.206: 1 responses, 86.95 KB
+  webp: 71.62 KB
+    Top 5 origin IPs:
+      108.157.173.96: 9 responses, 71.62 KB
+  application/x-mpegurl: 63.77 KB
+    Top 5 origin IPs:
+      200.147.253.12: 2 responses, 63.77 KB
+  application/x-javascript: 45.21 KB
+    Top 5 origin IPs:
+      3.174.59.16: 1 responses, 45.21 KB
+  image/webp: 17.35 KB
+    Top 5 origin IPs:
+      108.157.173.96: 2 responses, 17.35 KB
+  image/svg+xml: 15.65 KB
+    Top 5 origin IPs:
+      108.157.173.96: 10 responses, 15.25 KB
+      186.234.166.8: 1 responses, 0.28 KB
+      186.234.166.13: 1 responses, 0.12 KB
+  image/gif: 11.78 KB
+    Top 5 origin IPs:
+      186.234.166.8: 1 responses, 11.53 KB
+      142.250.78.162: 5 responses, 0.21 KB
+      13.33.129.9: 1 responses, 0.05 KB
+  text/css: 10.62 KB
+    Top 5 origin IPs:
+      18.161.205.25: 1 responses, 10.62 KB
+  text/xml: 8.07 KB
+    Top 5 origin IPs:
+      142.250.78.162: 3 responses, 8.07 KB
+  image/x-icon: 4.19 KB
+    Top 5 origin IPs:
+      108.157.173.96: 1 responses, 4.19 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.estadao.com.br
+Main document load time: 0.04 s
+Observed network window: 7.46 s
+Timestamp of first request: 2026-05-08 11:00:39.031
+Total requests: 132
+Unique URLs: 94
+Total Kilobytes downloaded: 8737.37
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.131.19: 1 responses, 1863.42 KB
+  text/javascript: 687.30 KB
+    Top 5 origin IPs:
+      23.196.224.75: 40 responses, 686.26 KB
+      13.33.129.53: 1 responses, 1.04 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  text/html: 355.91 KB
+    Top 5 origin IPs:
+      23.196.224.75: 1 responses, 280.07 KB
+      64.233.190.84: 1 responses, 75.25 KB
+      172.217.28.206: 1 responses, 0.50 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 261.71 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 248.39 KB
+      2.17.162.14: 1 responses, 11.65 KB
+      164.90.129.68: 1 responses, 1.10 KB
+      23.196.224.75: 3 responses, 0.41 KB
+      64.233.190.84: 1 responses, 0.09 KB
+  font/woff2: 223.90 KB
+    Top 5 origin IPs:
+      142.251.129.227: 6 responses, 198.90 KB
+      23.196.224.75: 1 responses, 25.00 KB
+  application/javascript: 179.61 KB
+    Top 5 origin IPs:
+      64.233.190.84: 1 responses, 95.33 KB
+      3.174.59.25: 1 responses, 74.97 KB
+      2.18.20.140: 1 responses, 9.31 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/avif: 60.37 KB
+    Top 5 origin IPs:
+      23.196.224.75: 4 responses, 60.37 KB
+  application/x-javascript: 45.21 KB
+    Top 5 origin IPs:
+      3.174.59.16: 1 responses, 45.21 KB
+  image/webp: 6.71 KB
+    Top 5 origin IPs:
+      2.17.162.14: 1 responses, 6.71 KB
+  image/png: 4.13 KB
+    Top 5 origin IPs:
+      23.196.224.75: 1 responses, 2.79 KB
+      2.17.162.14: 1 responses, 1.33 KB
+  image/vnd.microsoft.icon: 3.65 KB
+    Top 5 origin IPs:
+      23.196.224.75: 1 responses, 3.65 KB
+  text/css: 1.50 KB
+    Top 5 origin IPs:
+      23.196.224.75: 1 responses, 1.15 KB
+      64.233.190.84: 1 responses, 0.35 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.globo.com
+Main document load time: 0.03 s
+Observed network window: 6.67 s
+Timestamp of first request: 2026-05-08 11:00:56.968
+Total requests: 190
+Unique URLs: 125
+Total Kilobytes downloaded: 13618.45
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+  image/gif: 3044.07 KB
+    Top 5 origin IPs:
+      186.192.91.9: 1 responses, 3044.07 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.67.19: 1 responses, 1863.42 KB
+  application/javascript: 1769.52 KB
+    Top 5 origin IPs:
+      186.192.91.5: 1 responses, 961.20 KB
+      186.192.83.2: 7 responses, 807.69 KB
+      186.192.83.15: 1 responses, 0.64 KB
+  application/octet-stream: 809.27 KB
+    Top 5 origin IPs:
+      186.192.83.2: 4 responses, 414.73 KB
+      151.101.129.91: 1 responses, 394.55 KB
+  text/html: 339.63 KB
+    Top 5 origin IPs:
+      186.192.83.15: 2 responses, 338.65 KB
+      34.49.91.78: 2 responses, 0.83 KB
+      34.107.221.82: 1 responses, 0.09 KB
+      186.192.83.2: 1 responses, 0.07 KB
+  application/json: 297.63 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 248.39 KB
+      132.145.205.224: 1 responses, 19.32 KB
+      137.131.184.72: 1 responses, 16.89 KB
+      34.95.219.48: 1 responses, 5.48 KB
+      64.181.178.53: 16 responses, 3.69 KB
+  image/avif: 289.50 KB
+    Top 5 origin IPs:
+      186.192.91.9: 19 responses, 289.50 KB
+  javascript charset=utf-8: 228.24 KB
+    Top 5 origin IPs:
+      186.192.83.2: 1 responses, 228.24 KB
+  text/javascript: 178.79 KB
+    Top 5 origin IPs:
+      142.250.219.138: 1 responses, 149.79 KB
+      34.160.169.60: 5 responses, 27.15 KB
+      186.192.83.2: 2 responses, 1.85 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/webp: 57.95 KB
+    Top 5 origin IPs:
+      186.192.91.9: 5 responses, 36.68 KB
+      186.192.83.2: 1 responses, 21.27 KB
+  application/x-javascript: 42.25 KB
+    Top 5 origin IPs:
+      186.192.83.2: 1 responses, 42.25 KB
+  image/svg+xml: 27.82 KB
+    Top 5 origin IPs:
+      186.192.83.2: 29 responses, 27.82 KB
+  text/css: 20.90 KB
+    Top 5 origin IPs:
+      186.192.91.5: 1 responses, 18.76 KB
+      186.192.83.2: 2 responses, 2.13 KB
+  application/octet-stream, text/plain: 0.03 KB
+    Top 5 origin IPs:
+      163.176.34.15: 16 responses, 0.03 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.nytimes.com
+Main document load time: 0.04 s
+Observed network window: 6.29 s
+Timestamp of first request: 2026-05-08 14:27:47.783
+Total requests: 237
+Unique URLs: 181
+Total Kilobytes downloaded: 15492.40
+
+Breakdown by Content-Type:
+  text/plain: 4557.25 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+      172.217.28.174: 8 responses, 1.02 KB
+      151.101.129.164: 2 responses, 0.02 KB
+  image/webp: 2828.75 KB
+    Top 5 origin IPs:
+      151.101.1.164: 26 responses, 2798.37 KB
+      151.101.65.164: 16 responses, 30.38 KB
+  text/javascript: 2006.10 KB
+    Top 5 origin IPs:
+      151.101.65.164: 9 responses, 1583.81 KB
+      151.101.1.164: 19 responses, 306.15 KB
+      142.251.133.195: 5 responses, 116.14 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  image/png: 822.53 KB
+    Top 5 origin IPs:
+      151.101.1.164: 7 responses, 817.09 KB
+      151.101.65.164: 2 responses, 5.44 KB
+  text/html: 787.37 KB
+    Top 5 origin IPs:
+      142.251.0.92: 2 responses, 394.50 KB
+      151.101.65.164: 1 responses, 316.91 KB
+      142.251.0.84: 1 responses, 75.34 KB
+      151.101.1.164: 1 responses, 0.54 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  image/jpeg: 767.74 KB
+    Top 5 origin IPs:
+      151.101.1.164: 10 responses, 767.74 KB
+  application/json: 720.75 KB
+    Top 5 origin IPs:
+      151.101.1.164: 8 responses, 348.45 KB
+      151.101.193.91: 5 responses, 248.39 KB
+      151.101.65.164: 7 responses, 123.35 KB
+      52.70.193.103: 1 responses, 0.39 KB
+      142.251.0.84: 1 responses, 0.09 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  binary/octet-stream: 381.88 KB
+    Top 5 origin IPs:
+      151.101.1.164: 12 responses, 288.66 KB
+      34.160.144.191: 18 responses, 93.22 KB
+  application/javascript: 152.91 KB
+    Top 5 origin IPs:
+      142.251.0.84: 1 responses, 95.31 KB
+      142.251.0.92: 1 responses, 57.60 KB
+  font/woff2: 107.84 KB
+    Top 5 origin IPs:
+      142.251.134.163: 2 responses, 107.84 KB
+  text/css: 96.94 KB
+    Top 5 origin IPs:
+      151.101.65.164: 2 responses, 54.52 KB
+      151.101.1.164: 13 responses, 42.06 KB
+      142.251.0.84: 1 responses, 0.35 KB
+  image/vnd.microsoft.icon: 2.79 KB
+    Top 5 origin IPs:
+      151.101.65.164: 2 responses, 2.79 KB
+  text/vtt: 1.60 KB
+    Top 5 origin IPs:
+      151.101.129.164: 2 responses, 1.60 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.bbc.com
+Main document load time: 0.03 s
+Observed network window: 6.20 s
+Timestamp of first request: 2026-05-08 14:28:06.682
+Total requests: 121
+Unique URLs: 75
+Total Kilobytes downloaded: 8546.75
+
+Breakdown by Content-Type:
+  text/plain: 4556.24 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+      52.18.158.154: 1 responses, 0.04 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  text/javascript: 628.96 KB
+    Top 5 origin IPs:
+      23.42.196.17: 13 responses, 516.30 KB
+      13.224.252.63: 3 responses, 112.65 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  font/woff2: 388.97 KB
+    Top 5 origin IPs:
+      23.42.196.17: 6 responses, 388.97 KB
+  application/json: 251.81 KB
+    Top 5 origin IPs:
+      151.101.193.91: 5 responses, 248.39 KB
+      13.224.252.63: 3 responses, 2.19 KB
+      52.18.158.154: 6 responses, 1.14 KB
+      151.101.0.81: 1 responses, 0.08 KB
+  image/webp: 152.30 KB
+    Top 5 origin IPs:
+      184.85.139.67: 8 responses, 152.30 KB
+  application/javascript: 131.93 KB
+    Top 5 origin IPs:
+      3.162.247.77: 5 responses, 83.90 KB
+      23.42.196.17: 2 responses, 47.83 KB
+      13.224.252.63: 1 responses, 0.20 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  text/html: 82.62 KB
+    Top 5 origin IPs:
+      151.101.64.81: 1 responses, 82.53 KB
+      34.107.221.82: 1 responses, 0.09 KB
+      13.224.252.63: 1 responses, 0.00 KB
+  image/png: 1.57 KB
+    Top 5 origin IPs:
+      23.42.196.17: 3 responses, 1.57 KB
+  text/css: 1.18 KB
+    Top 5 origin IPs:
+      23.42.196.17: 1 responses, 1.18 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.cnn.com
+Main document load time: 0.04 s
+Observed network window: 6.17 s
+Timestamp of first request: 2026-05-08 14:28:25.300
+Total requests: 185
+Unique URLs: 150
+Total Kilobytes downloaded: 23640.33
+
+Breakdown by Content-Type:
+  video/mp4: 11933.07 KB
+    Top 5 origin IPs:
+      151.101.3.5: 6 responses, 11933.07 KB
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  image/webp: 1598.74 KB
+    Top 5 origin IPs:
+      151.101.3.5: 73 responses, 1598.74 KB
+  image/png: 1171.08 KB
+    Top 5 origin IPs:
+      151.101.3.5: 5 responses, 1171.08 KB
+  text/html: 591.08 KB
+    Top 5 origin IPs:
+      151.101.3.5: 1 responses, 515.50 KB
+      142.251.0.84: 1 responses, 75.29 KB
+      13.227.207.69: 1 responses, 0.20 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/javascript: 471.76 KB
+    Top 5 origin IPs:
+      151.101.3.5: 4 responses, 376.43 KB
+      142.251.0.84: 1 responses, 95.33 KB
+  font/woff2: 401.15 KB
+    Top 5 origin IPs:
+      151.101.3.5: 4 responses, 293.31 KB
+      142.251.134.163: 2 responses, 107.84 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  application/json: 319.27 KB
+    Top 5 origin IPs:
+      151.101.193.91: 5 responses, 248.39 KB
+      151.101.3.5: 5 responses, 69.54 KB
+      104.17.207.5: 1 responses, 1.23 KB
+      142.251.0.84: 1 responses, 0.09 KB
+  text/javascript: 231.06 KB
+    Top 5 origin IPs:
+      13.227.207.69: 2 responses, 231.06 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/svg+xml: 6.08 KB
+    Top 5 origin IPs:
+      151.101.3.5: 14 responses, 6.08 KB
+  image/x-icon: 5.09 KB
+    Top 5 origin IPs:
+      151.101.3.5: 1 responses, 5.09 KB
+  text/css: 4.56 KB
+    Top 5 origin IPs:
+      151.101.3.5: 1 responses, 4.21 KB
+      142.251.0.84: 1 responses, 0.35 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.uol.com.br
+Main document load time: 0.04 s
+Observed network window: 6.58 s
+Timestamp of first request: 2026-05-08 14:28:44.476
+Total requests: 169
+Unique URLs: 129
+Total Kilobytes downloaded: 10545.43
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+      200.147.35.150: 1 responses, 0.01 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  video/mp2t: 1342.62 KB
+    Top 5 origin IPs:
+      186.234.127.15: 4 responses, 1342.62 KB
+  application/javascript: 748.79 KB
+    Top 5 origin IPs:
+      108.158.194.89: 2 responses, 364.06 KB
+      13.227.110.55: 9 responses, 214.38 KB
+      13.227.207.11: 1 responses, 74.90 KB
+      13.227.207.32: 1 responses, 66.62 KB
+      23.193.118.21: 2 responses, 18.23 KB
+  text/html: 409.95 KB
+    Top 5 origin IPs:
+      172.217.29.106: 1 responses, 272.82 KB
+      108.139.182.15: 1 responses, 136.16 KB
+      3.163.63.78: 3 responses, 0.52 KB
+      13.227.110.55: 1 responses, 0.35 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  text/javascript: 408.71 KB
+    Top 5 origin IPs:
+      108.158.194.98: 16 responses, 227.17 KB
+      172.217.29.106: 1 responses, 147.45 KB
+      108.139.182.15: 1 responses, 33.06 KB
+      13.227.207.108: 1 responses, 1.03 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  application/json: 250.47 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 248.39 KB
+      200.147.99.204: 3 responses, 0.99 KB
+      200.147.100.18: 1 responses, 0.74 KB
+      108.139.182.15: 1 responses, 0.28 KB
+      18.155.21.111: 2 responses, 0.06 KB
+  image/png: 149.71 KB
+    Top 5 origin IPs:
+      108.157.173.96: 3 responses, 95.99 KB
+      200.147.36.68: 2 responses, 53.72 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/jpeg: 86.95 KB
+    Top 5 origin IPs:
+      142.251.133.206: 1 responses, 86.95 KB
+  application/x-mpegurl: 63.77 KB
+    Top 5 origin IPs:
+      186.234.127.15: 2 responses, 63.77 KB
+  webp: 49.05 KB
+    Top 5 origin IPs:
+      108.157.173.96: 6 responses, 49.05 KB
+  application/x-javascript: 45.21 KB
+    Top 5 origin IPs:
+      13.224.252.81: 1 responses, 45.21 KB
+  image/gif: 34.44 KB
+    Top 5 origin IPs:
+      200.147.36.68: 1 responses, 22.86 KB
+      200.147.36.72: 1 responses, 11.53 KB
+      108.139.166.19: 1 responses, 0.05 KB
+  image/webp: 19.46 KB
+    Top 5 origin IPs:
+      108.157.173.96: 4 responses, 19.46 KB
+  image/svg+xml: 12.59 KB
+    Top 5 origin IPs:
+      108.157.173.96: 10 responses, 12.19 KB
+      200.147.36.72: 1 responses, 0.28 KB
+      200.147.41.239: 1 responses, 0.12 KB
+  text/css: 10.62 KB
+    Top 5 origin IPs:
+      13.227.207.32: 1 responses, 10.62 KB
+  image/x-icon: 4.19 KB
+    Top 5 origin IPs:
+      108.157.173.96: 1 responses, 4.19 KB
+  text/xml: 1.51 KB
+    Top 5 origin IPs:
+      172.217.28.162: 5 responses, 1.51 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.estadao.com.br
+Main document load time: 0.03 s
+Observed network window: 7.51 s
+Timestamp of first request: 2026-05-08 14:29:03.207
+Total requests: 129
+Unique URLs: 93
+Total Kilobytes downloaded: 8742.63
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.3.19: 1 responses, 1863.42 KB
+  text/javascript: 687.30 KB
+    Top 5 origin IPs:
+      92.123.8.110: 40 responses, 686.26 KB
+      13.227.207.108: 1 responses, 1.04 KB
+  application/octet-stream: 394.55 KB
+    Top 5 origin IPs:
+      151.101.129.91: 1 responses, 394.55 KB
+  text/html: 360.29 KB
+    Top 5 origin IPs:
+      92.123.8.110: 1 responses, 284.47 KB
+      142.251.0.84: 1 responses, 75.23 KB
+      172.217.28.206: 1 responses, 0.50 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 261.57 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 248.39 KB
+      2.20.139.43: 1 responses, 11.65 KB
+      164.90.129.68: 1 responses, 1.10 KB
+      92.123.8.110: 2 responses, 0.27 KB
+      142.251.0.84: 1 responses, 0.09 KB
+  application/javascript: 179.61 KB
+    Top 5 origin IPs:
+      142.251.0.84: 1 responses, 95.33 KB
+      13.227.207.54: 1 responses, 74.97 KB
+      88.221.0.230: 1 responses, 9.31 KB
+  font/woff2: 178.37 KB
+    Top 5 origin IPs:
+      142.251.134.163: 4 responses, 153.37 KB
+      92.123.8.110: 1 responses, 25.00 KB
+  image/avif: 106.91 KB
+    Top 5 origin IPs:
+      92.123.8.110: 4 responses, 106.91 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  application/x-javascript: 45.21 KB
+    Top 5 origin IPs:
+      13.224.252.81: 1 responses, 45.21 KB
+  image/webp: 6.71 KB
+    Top 5 origin IPs:
+      2.20.139.43: 1 responses, 6.71 KB
+  image/png: 4.13 KB
+    Top 5 origin IPs:
+      92.123.8.110: 1 responses, 2.79 KB
+      2.20.139.43: 1 responses, 1.33 KB
+  image/vnd.microsoft.icon: 3.65 KB
+    Top 5 origin IPs:
+      92.123.8.110: 1 responses, 3.65 KB
+  text/css: 1.50 KB
+    Top 5 origin IPs:
+      92.123.8.110: 1 responses, 1.15 KB
+      142.251.0.84: 1 responses, 0.35 KB
+
+
+DNS used: 192.168.0.69
+
+Loaded Webpage: www.globo.com
+Main document load time: 0.04 s
+Observed network window: 6.24 s
+Timestamp of first request: 2026-05-08 14:29:21.196
+Total requests: 193
+Unique URLs: 124
+Total Kilobytes downloaded: 10560.89
+
+Breakdown by Content-Type:
+  text/plain: 4556.21 KB
+    Top 5 origin IPs:
+      151.101.129.91: 32 responses, 4556.21 KB
+  application/x-xpinstall: 1863.42 KB
+    Top 5 origin IPs:
+      151.101.67.19: 1 responses, 1863.42 KB
+  application/javascript: 1814.69 KB
+    Top 5 origin IPs:
+      186.192.91.5: 1 responses, 961.20 KB
+      186.192.83.2: 8 responses, 852.85 KB
+      186.192.83.15: 1 responses, 0.64 KB
+  application/octet-stream: 809.27 KB
+    Top 5 origin IPs:
+      186.192.83.2: 4 responses, 414.73 KB
+      151.101.129.91: 1 responses, 394.55 KB
+  text/html: 331.12 KB
+    Top 5 origin IPs:
+      186.192.83.15: 2 responses, 330.21 KB
+      34.49.91.78: 2 responses, 0.83 KB
+      34.107.221.82: 1 responses, 0.09 KB
+  application/json: 297.77 KB
+    Top 5 origin IPs:
+      151.101.129.91: 5 responses, 248.39 KB
+      132.145.205.224: 1 responses, 19.32 KB
+      137.131.184.72: 1 responses, 17.03 KB
+      34.95.219.48: 1 responses, 5.48 KB
+      64.181.178.53: 16 responses, 3.69 KB
+  javascript charset=utf-8: 228.24 KB
+    Top 5 origin IPs:
+      186.192.83.2: 1 responses, 228.24 KB
+  image/avif: 225.70 KB
+    Top 5 origin IPs:
+      186.192.91.9: 18 responses, 225.70 KB
+  text/javascript: 178.77 KB
+    Top 5 origin IPs:
+      172.217.162.170: 1 responses, 149.81 KB
+      34.160.169.60: 5 responses, 27.11 KB
+      186.192.83.2: 2 responses, 1.85 KB
+  binary/octet-stream: 93.22 KB
+    Top 5 origin IPs:
+      34.160.144.191: 18 responses, 93.22 KB
+  image/webp: 71.47 KB
+    Top 5 origin IPs:
+      186.192.91.9: 6 responses, 50.21 KB
+      186.192.83.2: 1 responses, 21.27 KB
+  application/x-javascript: 42.25 KB
+    Top 5 origin IPs:
+      186.192.83.2: 1 responses, 42.25 KB
+  image/svg+xml: 27.82 KB
+    Top 5 origin IPs:
+      186.192.83.2: 29 responses, 27.82 KB
+  text/css: 20.90 KB
+    Top 5 origin IPs:
+      186.192.91.5: 1 responses, 18.76 KB
+      186.192.83.2: 2 responses, 2.13 KB
+  application/octet-stream, text/plain: 0.03 KB
+    Top 5 origin IPs:
+      163.176.34.15: 16 responses, 0.03 KB
